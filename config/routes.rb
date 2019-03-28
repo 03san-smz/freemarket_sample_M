@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'items#index'
-  get 'signup/new' => 'signup#new'
+  resources :signup, only: [:new]
   get 'signup/login' => 'signup#login'
 end
