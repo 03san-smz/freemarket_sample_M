@@ -1,0 +1,300 @@
+// ラップ用
+.single-container{
+  background: #F5F5F5;
+  padding: 0 0 250px;
+  @media screen and (min-width: 768px){
+    padding: 0 0 220px;
+  }
+}
+
+// ヘッダー用
+.single-header{
+  text-align: center;
+  @media screen and (min-width: 768px){
+    height: 128px;
+  }
+  h1{
+    display: inline-block;
+    margin: 11px 0 12px;
+    @media screen and (min-width: 768px){
+      margin: 40px 0 0;
+    }
+  }
+  a{
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    margin: 0 8px 0 0;
+    line-height: 33px;
+    @media screen and (min-width: 768px){
+      width: 185px;
+      height: 49px;
+      line-height: 49px;
+    }
+    :hover{
+      opacity: .7;
+    }
+  }
+  img{
+    width: 120px;
+    height: 33px;
+    @media screen and (min-width: 768px){
+      width: 185px;
+      height: 49px;
+    }
+  }
+}
+
+// メイン用
+.l-single-container{
+  background: #fff;
+  @media screen and (min-width: 768px){
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+.l-single-head{
+  padding: 24px 8px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    padding: 32px 16px;
+    font-size: 22px;
+  }
+}
+
+.accordion-parent .fa-angle-right{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #aaa;
+  font-size: 14px;
+  @media screen and (min-width: 768px){
+    display: none
+  }
+}
+.accordion-toggle{
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  a{
+    color: #333;
+  }
+}
+
+.item-shipping-fee{
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buy-form{
+  p{
+    margin: 8px 0 0;
+    line-height: 1.5;
+  }
+  .btn-default{
+    margin: 8px 0 0;
+  }
+}
+.buy-content{
+  margin: 40px 0 0;
+  padding: 24px 12.5% 0;
+  border-top: 1px solid #f5f5f5;
+  &:first-of-type{
+    margin: 0;
+  }
+  &:last-of-type{
+    padding: 40px 12.5%;
+  }
+}
+.buy-content-inner{
+  max-width: 320px;
+  margin: 0 auto;
+}
+.buy-item{
+  text-align: center;
+  img{
+    width: 148px;
+  }
+}
+.buy-item-name{
+  margin: 8px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.buy-price-ja{
+  margin: 16px 0 0;
+  font-size: 28px;
+  .item-shipping-fee{
+    margin: 0 0 0 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.buy-price-table{
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  &:first-child{
+    margin: 8px 0 0;
+  }
+}
+.buy-price-row{
+  display: table-row;
+  border-top: 1px solid #ccc;
+  &:first-child{
+    border: 0;
+  }
+}
+.buy-price-cell{
+  display: table-cell;
+  padding: 16px 0;
+  text-align: right;
+  &:first-child{
+    text-align: left;
+  }
+  &.buy-accordion{
+    padding: 0;
+    .accordion-toggle{
+      padding: 16px 0;
+    }
+  }
+}
+.buy-you-pay{
+  font-size: 22px;
+  @media screen and (min-width: 768px){
+    font-size: 28px;
+  }
+}
+.buy-accordion{
+  margin: 16px 0 0;
+  &.not-have{
+    background: #ccc;
+    .accordion-toggle{
+      cursor: default;
+    }
+  }
+  .accordion-toggle{
+    border: 1px solid #ccc;
+    padding: 16px;
+  }
+  .accordion-parent > ul{
+    padding: 24px 40px;
+    background: #fafafa;
+    text-align: left;
+  }
+}
+.buy-user-info{
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out 0.3s;
+  h3{
+    margin: 40px 0 0;
+    font-size: 14px;
+    &:first-child{
+      margin: 0;
+    }
+  }
+  address{
+    display: block;
+  }
+}
+.buy-user-info-text{
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.buy-user-info-fix{
+  display: block;
+  text-align: right;
+  .fa-angle-right{
+    margin: 0 0 0 8px;
+    font-size: 10px;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  span{
+    vertical-align: middle;
+    font-size: 14px;
+  }
+}
+
+.btn-default{
+  display: block;
+  width: 100%;
+  line-height: 48px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  text-align: center;
+  &:hover{
+    text-decoration: none;
+  }
+  &:disabled{
+    border: 1px solid #888;
+    background: #888;
+    color: #fff;
+    &:hover{
+      background: #888;
+      color: #fff;
+    }
+  }
+}
+.btn-gray{
+  background: #888;
+  border: 1px solid #888;
+  color: #fff;
+}
+
+// フッター用
+.single-footer{
+  position: absolute;
+  right: 0;
+  bottom: 1;
+  left: 0;
+  z-index: 1;
+  height: 250px;
+  padding: 40px 0;
+  text-align: center;
+  @media screen and (min-width: 768px){
+    width: 456px;
+    height: 220px;
+    margin: 0 auto;
+  }
+  ul{
+    font-size: 0;
+  }
+  li{
+    margin: 16px 0 0;
+    font-size: 12px;
+    @media screen and (min-width: 768px){
+      display: inline-block;
+      margin: 0 0 0 16px;
+    }
+    &:first-child{
+      margin: 0;
+    }
+  }
+  a{
+    display: block;
+    color: #333;
+    :hover{
+      opacity: .7;
+    }
+  }
+  p{
+    margin: 8px 0 0;
+  }
+  small{
+    font-size: 10px;
+  }
+  &__logo{
+    width: 80px;
+    height: 65px;
+    margin: 40px auto 0;
+  }
+}

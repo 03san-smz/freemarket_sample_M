@@ -18,3 +18,17 @@
 /*ユーザー新規登録画面のheder 部分テンプレート */
 @import "single_footer";
 // ユーザー新規登録画面のfooter 部分テンプレート
+
+
+@import "modules/initial";
+// 初期設定
+@import "modules/transaction";
+// 取引ページ用
+@import "modules/global-header";
+// 共通ヘッダー用
+@import "modules/global-footer";
+// 共通フッター用
+@import "modules/app-banner";
+// アプリケーションバナー用
+@import "modules/mypage";
+// マイページ用
