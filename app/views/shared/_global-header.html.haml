@@ -1,0 +1,2710 @@
+%header.pc-header
+  .pc-header-inner
+    .clearfix
+      %h1.l-left
+        = link_to "https://www.mercari.com/jp/" do
+          = image_tag "/assets/logo.svg", size: "134x36", alt: "mercari"
+      %form.pc-header-form.l-right{action: "https://www.mercari.com/jp/search/"}
+        %input.input-default{name: "keyword", placeholder: "キーワードから探す", type: "search", value: ""}/
+        %i.fas.fa-search
+    .pc-header-nav-box.clearfix
+      %nav.l-left
+        %ul.pc-header-nav
+          %li
+            %h2
+              = link_to "カテゴリーから探す", "https://www.mercari.com/jp/category/", class: "pc-header-nav-root"
+            %ul.pc-header-nav-parent-wrap
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "レディース" , "#"
+                %ul.pc-header-nav-child-wrap
+                  / カテゴリー中
+                  %li.pc-header-nav-child
+                    = link_to "トップス" , "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "Tシャツ/カットソー(半袖/袖なし)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "Tシャツ/カットソー(七分/長袖)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シャツ/ブラウス(半袖/袖なし)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シャツ/ブラウス(七分/長袖)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポロシャツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャミソール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タンクトップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホルターネック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ニット/セーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チュニック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーディガン/ボレロ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンサンブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベスト/ジレ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パーカー", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ジャケット/アウター", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "テーラードジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノーカラージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "Gジャン/デニムジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レザージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダウンジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ライダースジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミリタリージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダウンベスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジャンパー/ブルゾン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポンチョ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロングコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トレンチコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダッフルコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピーコート", "#"
+                  %li.pc-header-nav-child
+                    = link_to "パンツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "デニム/ジーンズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ショートパンツ", "#"
+                        = link_to "デニム/ジーンズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カジュアルパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハーフパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チノパン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワークパンツ/カーゴパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クロップドパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サロペット/オーバーオール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オールインワン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サルエルパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ガウチョパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スカート", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミニスカート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ひざ丈スカート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロングスカート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キュロット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ワンピース", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミニワンピース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ひざ丈ワンピース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロングワンピース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "靴", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハイヒール/パンプス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サンダル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スニーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミュール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "モカシン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ローファー/革靴", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フラットシューズ/バレエシューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "長靴/レインシューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ルームウェア/パジャマ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ルームウェア", "#"
+                  %li.pc-header-nav-child
+                    = link_to "レッグウェア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スパッツ/レギンス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストッキング/タイツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レッグウォーマー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他スポーツ", "#"
+                  %li.pc-header-nav-child
+                    = link_to "帽子", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ニットキャップ/ビーニー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンチング/ベレー帽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャスケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "麦わら帽子", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "バッグ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンドバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トートバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エコバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リュック/バックパック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボストンバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ショルダーバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クラッチバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポーチ/バニティ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボディバッグ/ウェストバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マザーズバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メッセンジャーバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビジネスバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "旅行用バッグ/キャリーバッグ", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネックレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブレスレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バングル/リストバンド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピアス(片耳用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピアス(両耳用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "イヤリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンクレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブローチ/コサージュ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チャーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ヘアアクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアゴム/シュシュ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアバンド/カチューシャ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアピン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "小物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "長財布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "折り財布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コインケース/小銭入れ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "名刺入れ/定期入れ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キーケース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キーホルダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手袋/アームカバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンカチ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マフラー/ショール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストール/スヌード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バンダナ/スカーフ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネックウォーマー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サスペンダー", "#"
+                  %li.pc-header-nav-child
+                    = link_to "時計", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "腕時計(アナログ)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "腕時計(デジタル)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラバーベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レザーベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "金属ベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "メンズ", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "トップス" , "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "Tシャツ/カットソー(半袖/袖なし)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "Tシャツ/カットソー(七分/長袖)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シャツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポロシャツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タンクトップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ニット/セーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーディガン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スウェット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジャージ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ジャケット/アウター", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "テーラードジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノーカラージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "Gジャン/デニムジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レザージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダウンジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ライダースジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミリタリージャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ナイロンジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フライトジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダッフルコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピーコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ステンカラーコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トレンチコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "モッズコート", "#"
+                  %li.pc-header-nav-child
+                    = link_to "パンツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "デニム/ジーンズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワークパンツ/カーゴパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スラックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チノパン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ショートパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ペインターパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サルエルパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オーバーオール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "靴", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "スニーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サンダル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "モカシン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ドレス/ビジネス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "長靴/レインシューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "デッキシューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "バッグ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ショルダーバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トートバッグ, "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボストンバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リュック/バックパック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエストポーチ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボディーバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ドラムバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビジネスバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トラベルバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メッセンジャーバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エコバッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スーツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "スーツジャケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スーツベスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スラックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "セットアップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "帽子", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ニットキャップ/ビーニー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンチング/ベレー帽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャスケット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サンバイザー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネックレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブレスレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バングル/リストバンド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピアス(片耳用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピアス(両耳用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンクレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "小物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "長財布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "折り財布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マネークリップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コインケース/小銭入れ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "名刺入れ/定期入れ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キーケース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キーホルダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネクタイ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手袋", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンカチ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マフラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バンダナ", "#"
+                  %li.pc-header-nav-child
+                    = link_to "時計", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "腕時計(アナログ)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "腕時計(デジタル)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラバーベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レザーベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "金属ベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "水着", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "一般水着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツ用", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "レッグウェア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レギンス/スパッツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レッグウォーマー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アンダーウェア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トランクス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボクサーパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "ベビー・キッズ", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "ベビー服(女の子用)  ~95cm", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アウター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スカート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワンピース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビードレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "おくるみ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "下着/肌着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロンパース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ベビー服(男の子用)  ~95cm", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アウター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "おくるみ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "下着/肌着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロンパース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ベビー服(男女兼用)  ~95cm", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アウター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "おくるみ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "下着/肌着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロンパース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "キッズ服(女の子用) 100cm~", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "コート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジャケット/上着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(Tシャツ/カットソー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(トレーナー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(チュニック)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(タンクトップ)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(その他)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スカート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワンピース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "セットアップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フォーマル/ドレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "和服", "#"
+                  %li.pc-header-nav-child
+                    = link_to "キッズ服(男の子用) 100cm~", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "コート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジャケット/上着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(Tシャツ/カットソー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(トレーナー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(その他)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "セットアップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フォーマル/ドレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "和服", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "浴衣", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "甚平", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "水着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "キッズ服(男女兼用) 100cm~", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "コート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジャケット/上着", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(Tシャツ/カットソー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(トレーナー)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トップス(その他)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボトムス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パジャマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "キッズ靴", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "スニーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サンダル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "長靴", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "子ども用ファッション小物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "靴下/スパッツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "帽子", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エプロン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サスペンダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タイツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンカチ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バンダナ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベルト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マフラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "傘", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手袋", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スタイ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "おむつ/トイレ/バス", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "おむつ用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "おまる/補助便座", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トレーニングパンツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビーバス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お風呂用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "外出/移動用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "抱っこひも/スリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チャイルドシート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "授乳/食事", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミルク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビーフード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビー用食器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ベビー家具/寝具/室内用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "布団/毛布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "イス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "たんす", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "おもちゃ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "おふろのおもちゃ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "がらがら", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オルゴール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベビージム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手押し車/カタカタ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "知育玩具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "行事/記念品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "お宮参り用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お食い初め用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アルバム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手形/足形", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "インテリア・住まい・小物", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "キッチン/食器", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "食器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "調理器具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "収納/キッチン雑貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "弁当用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カトラリー(スプーン等)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "テーブル用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "容器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エプロン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アルコールグッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "浄水機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ベッド/マットレス", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "セミシングルベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シングルベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "セミダブルベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダブルベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワイドダブルベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クイーンベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キングベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "脚付きマットレスベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マットレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "すのこベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロフトベッド/システムベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "簡易ベッド/折りたたみベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "収納付き", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ソファ/ソファベッド", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソファセット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シングルソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラブソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トリプルソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オットマン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コーナーソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビーズソファ/クッションソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ローソファ/フロアソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソファベッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "応接セット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソファカバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リクライニングソファ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "椅子/チェア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "一般", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スツール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダイニングチェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハイバックチェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロッキングチェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "座椅子", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "折り畳みイス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "デスクチェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "机/テーブル", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "こたつ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カウンターテーブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サイドテーブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "センターテーブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダイニングテーブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "座卓/ちゃぶ台", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アウトドア用", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パソコン用", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "事務机/学習机", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "収納家具", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "リビング収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キッチン収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "玄関/屋外収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バス/トイレ収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "本収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "本/CD/DVD収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洋服タンス/押入れ収納", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電話台/ファックス台", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ドレッサー/鏡台", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "棚/ラック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ケース/ボックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ラグ/カーペット/マット", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーペット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホットカーペット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "玄関/キッチンマット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トイレ/バスマット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "カーテン/ブラインド", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーテン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブラインド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロールスクリーン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "のれん", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ライト/照明", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "蛍光灯/電球", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "天井照明", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フロアスタンド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "寝具", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "布団/毛布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "枕", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シーツ/カバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "インテリア小物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ごみ箱", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウェルカムボード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オルゴール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クッション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クッションカバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スリッパラック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ティッシュボックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バスケット/かご", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フォトフレーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マガジンラック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "モビール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "花瓶", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "灰皿", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "傘立て", "#"
+                  %li.pc-header-nav-child
+                    = link_to "季節/年中行事", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "正月", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "成人式", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バレンタインデー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ひな祭り", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "子どもの日", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "母の日", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "父の日", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サマーギフト/お中元", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "夏/夏休み", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハロウィン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "敬老の日", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "七五三", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お歳暮", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クリスマス", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "本・音楽・ゲーム", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "本", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "文学/小説", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "人文/社会", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノンフィクション/教養", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "地図/旅行ガイド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビジネス/経済", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "健康/医学", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コンピュータ/IT", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "趣味/スポーツ/実用", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "住まい/暮らし/子育て", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アート/エンタメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洋書", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "絵本", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "参考書", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "漫画", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "全巻セット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "少年漫画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "少女漫画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "青年漫画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "女性漫画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "同人誌", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "雑誌", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "アート/エンタメ/ホビー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファッション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ニュース/総合", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "趣味/スポーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "CD", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "邦楽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洋楽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アニメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クラシック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キッズ/ファミリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "DVD/ブルーレイ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "外国映画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "日本映画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アニメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "TVドラマ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミュージック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お笑い/バラエティ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツ/フィットネス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キッズ/ファミリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "レコード", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "邦楽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洋楽", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "テレビゲーム", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "家庭用ゲーム本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "家庭用ゲームソフト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "携帯用ゲーム本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "携帯用ゲームソフト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "PCゲーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "おもちゃ・ホビー・グッズ", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "おもちゃ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャラクターグッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ぬいぐるみ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "小物/アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "模型/プラモデル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミニカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トイラジコン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "プラモデル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホビーラジコン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "鉄道模型", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "タレントグッズ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイドル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミュージシャン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タレント/お笑い芸人", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツ選手", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "コミック/アニメグッズ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストラップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キーホルダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッジ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クリアファイル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポスター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タオル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "トレーディングカード", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "遊戯王", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マジック：ザ・ギャザリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポケモンカードゲーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "デュエルマスターズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バトルスピリッツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "プリパラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイカツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カードファイト!! ヴァンガード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヴァイスシュヴァルツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "プロ野球オーナーズリーグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベースボールヒーローズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ドラゴンボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スリーブ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "フィギュア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "コミック/アニメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "特撮", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ゲームキャラクター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "SF/ファンタジー/ホラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アメコミ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミリタリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "楽器/器材", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "エレキギター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アコースティックギター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ベース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エフェクター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンプ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "弦楽器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "管楽器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "鍵盤楽器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "打楽器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "和楽器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "楽譜/スコア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レコーディング/PA機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "DJ機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "DTM/DAW", "#"
+                  %li.pc-header-nav-child
+                    = link_to "コレクション", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "武具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "使用済切手/官製はがき", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "旧貨幣/金貨/銀貨/記念硬貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "印刷物", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノベルティグッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ミリタリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トイガン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "個人装備", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "美術品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "陶芸", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ガラス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "漆芸", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "金属工芸", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "絵画/タペストリ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "版画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "彫刻/オブジェクト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "書", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "写真", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アート用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "画材", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "額縁", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "トランプ/UNO", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カルタ/百人一首", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビリヤード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "麻雀", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パズル/ジグソーパズル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "囲碁/将棋", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オセロ/チェス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "人生ゲーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "野球/サッカーゲーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スポーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "三輪車/乗り物", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヨーヨー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "模型製作用品", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "そのコスメ・香水・美容他", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "ベースメイク", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファンデーション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "化粧下地", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コントロールカラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "BBクリーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "CCクリーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コンシーラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フェイスパウダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トライアルセット/サンプル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "メイクアップ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイシャドウ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "口紅", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リップグロス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リップライナー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チーク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フェイスカラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マスカラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイライナー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "つけまつげ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイブロウペンシル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パウダーアイブロウ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "眉マスカラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トライアルセット/サンプル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メイク道具/化粧小物", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ネイルケア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネイルカラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カラージェル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネイルベースコート/トップコート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネイルアート用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネイルパーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネイルチップ/付け爪", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "手入れ用具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "除光液", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "香水", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "香水(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "香水(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ユニセックス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボディミスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スキンケア/基礎化粧品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "化粧水/ローション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "乳液/ミルク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "美容液", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フェイスクリーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洗顔料", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クレンジング/メイク落とし", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ジェル/ゲル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイケア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リップケア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トライアルセット/サンプル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洗顔グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ヘアケア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "シャンプー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トリートメント", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コンディショナー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リンス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スタイリング剤", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カラーリング剤", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブラシ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ボディケア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "オイル/クリーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ハンドクリーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ローション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "日焼け止め/サンオイル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボディソープ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "入浴剤", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "制汗/デオドラント", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フットケア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "オーラルケア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "口臭防止/エチケット用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "歯ブラシ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "リラクゼーション", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "エッセンシャルオイル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "芳香器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お香/香炉", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キャンドル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リラクゼーショングッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ダイエット", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダイエット食品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エクササイズ用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "体重計", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "体脂肪計", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "健康用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "看護/介護用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "救急/衛生用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "家電・スマホ・カメラ", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "スマートフォン/携帯電話", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "スマートフォン本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッテリー/充電器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "携帯電話本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "PHS本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スマホアクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "Android用ケース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "iPhone用ケース", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "イヤホンジャック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストラップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フィルム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "自撮り棒", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "PC/タブレット", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "タブレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノートPC", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "デスクトップ型PC", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ディスプレイ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電子ブックリーダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "PC周辺機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "PCパーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "カメラ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "デジタルカメラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビデオカメラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レンズ(単焦点)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レンズ(ズーム)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フィルムカメラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "防犯カメラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "テレビ/映像機器", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "テレビ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "プロジェクター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブルーレイレコーダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "DVDレコーダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブルーレイプレーヤー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "DVDプレーヤー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "映像用ケーブル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "オーディオ機器", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ポータブルプレーヤー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "イヤフォン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘッドフォン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンプ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スピーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ケーブル/シールド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラジオ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "美容/健康", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアドライヤー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアアイロン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "美容機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電気シェーバー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電動歯ブラシ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "冷暖房/空調", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "エアコン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "空気清浄器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "加湿器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "扇風機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "除湿機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファンヒーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電気ヒーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オイルヒーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストーブ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホットカーペット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "こたつ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電気毛布", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "生活家電", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "冷蔵庫", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洗濯機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "炊飯器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電子レンジ/オーブン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "調理機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アイロン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "掃除機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エスプレッソマシン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "コーヒーメーカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "衣類乾燥機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "スポーツ・レジャー", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "ゴルフ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "クラブ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シューズ(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シューズ(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "フィッシング", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ロッド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ルアー用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "釣り糸/ライン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "自転車", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "自転車本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "パーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "工具/メンテナンス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "トレーニング/エクササイズ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ランニング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウォーキング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヨガ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トレーニング用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "野球", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "グローブ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "防具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "練習機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "記念グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "応援グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "サッカー/フットサル", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "記念グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "応援グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "テニス", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラケット(硬式用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラケット(軟式用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シューズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "記念グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "応援グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スノーボード", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バインディング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(子ども用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア/装備(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア/装備(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア/装備(子ども用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スキー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "板", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブーツ(子ども用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビンディング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウエア(子ども用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストック", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他スポーツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ダンス/バレエ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サーフィン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バスケットボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バドミントン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バレーボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スケートボード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "陸上競技", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラグビー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アメリカンフットボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボクシング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボウリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アウトドア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "テント/タープ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ライト/ランタン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "寝袋/寝具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "テーブル/チェア", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ストーブ/コンロ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "調理器具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "食器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "登山用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "旅行用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "ハンドメイド", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "アクセサリー(女性用)", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ピアス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "イヤリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネックレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブレスレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "リング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チャーム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘアゴム", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アンクレット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "ファッション/小物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バッグ(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "財布(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "財布(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファッション雑貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アクセサリー/時計", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "時計(女性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "時計(男性用)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "日用品/インテリア", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "キッチン用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "家具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "文房具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アート/写真", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アロマ/キャンドル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フラワー/ガーデン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "趣味/おもちゃ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "クラフト/布製品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "おもちゃ/人形", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "キッズ/ベビー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファッション雑貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スタイ/よだれかけ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "外出用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ネームタグ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "素材/材料", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "各種パーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "生地/糸", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "型紙/パターン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "二次創作物", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "Ingress", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クリエイターズ宇宙兄弟", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "チケット", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "音楽", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "男性アイドル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "女性アイドル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "韓流", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "国内アーティスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "海外アーティスト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "音楽フェス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "声優/アニメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "スポーツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "サッカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "野球", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "テニス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "格闘技/プロレス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "相撲/武道", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ゴルフ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バレーボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バスケットボール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "モータースポーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウィンタースポーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "演劇/芸能", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミュージカル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "演劇", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "伝統芸能", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "落語", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "お笑い", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オペラ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サーカス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バレエ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "イベント", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "声優/アニメ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "キッズ/ファミリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "トークショー/講演会", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "映画", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "邦画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洋画", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "施設利用券", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "遊園地/テーマパーク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "美術館/博物館", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "スキー場", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ゴルフ場", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フィットネスクラブ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "プール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ボウリング場", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "水族館", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "動物園", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "優待券/割引券", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ショッピング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レストラン/食事券", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "フード/ドリンク券", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "宿泊券", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "自動車・オートバイ", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "自動車本体", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "国内自動車本体", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "外国自動車本体", "#"
+                  %li.pc-header-nav-child
+                    = link_to "自動車タイヤ/ホイール", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "タイヤ/ホイールセット", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タイヤ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホイール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "自動車パーツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "サスペンション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブレーキ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "外装、エアロパーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ライト", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "内装品、シート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ステアリング", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マフラー・排気系", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エンジン、過給器、冷却装置", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "クラッチ、ミッション、駆動系", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電装品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "補強パーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "汎用パーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "外国自動車用パーツ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "自動車アクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "車内アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーナビ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カーオーディオ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "車外アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メンテナンス用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チャイルドシート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ドライブレコーダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "レーダー探知機", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カタログ/マニュアル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "セキュリティ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ETC", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "オートバイ車体", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "オートバイパーツ", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "タイヤ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "マフラー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "エンジン、冷却装置", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カウル、フェンダー、外装", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "サスペンション", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ホイール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "シート", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブレーキ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "タンク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ライト、ウィンカー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "チェーン、スプロケット、駆動系", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "電装系", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミラー", "#"
+                  %li.pc-header-nav-child
+                    = link_to "オートバイアクセサリー", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ヘルメット/シールド", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "バイクウエア/装備", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アクセサリー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "メンテナンス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カタログ/マニュアル", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+              / カテゴリー大
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "その他", "#"
+                %ul.pc-header-nav-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "まとめ売り", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                  %li.pc-header-nav-child
+                    = link_to "ペット用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "ペットフード", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "犬用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "猫用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "魚用品/水草", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "小動物用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "爬虫類/両生類用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "かご/おり", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "鳥用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "虫類用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "食品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "菓子", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "米", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "野菜", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "果物", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "調味料", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "魚介類(加工食品)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "肉類(加工食品)", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他 加工食品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "飲料/酒", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "コーヒー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ソフトドリンク", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ミネラルウォーター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "茶", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ウイスキー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ワイン", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ブランデー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "焼酎", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "日本酒", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ビール、発泡酒", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "日用品/生活雑貨/旅行", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "タオル/バス用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "日用品/生活雑貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "洗剤/柔軟剤", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "旅行用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "防災関連グッズ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "アンティーク/コレクション", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "雑貨", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "工芸品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "家具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "印刷物", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "文房具/事務用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "筆記具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ノート/メモ帳", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "テープ/マスキングテープ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カレンダー/スケジュール", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "アルバム/スクラップ", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ファイル/バインダー", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "はさみ/カッター", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "カードホルダー/名刺管理", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "のり/ホッチキス", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "事務/店舗用品", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+                      %li.pc-header-nav-grand-child
+                        = link_to "オフィス用品一般", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "オフィス家具", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "店舗用品", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "OA機器", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "ラッピング/包装", "#"
+                      %li.pc-header-nav-grand-child
+                        = link_to "その他", "#"
+                  %li.pc-header-nav-child
+                    = link_to "その他", "#"
+                    %ul.pc-header-nav-grand-child-wrap
+              %li.pc-header-nav-parent
+                %h3
+                  = link_to "カテゴリー一覧", "#"
+          / カテゴリー大
+          %li
+            %h2
+              = link_to "ブランドから探す", "https://www.mercari.com/jp/brand/", class: "pc-header-nav-root"
+              %ul.pc-header-nav-parent-wrap
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "シャネル", "#"
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "ナイキ", "#"
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "ルイ ヴィトン", "#"
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "シュプリーム", "#"
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "アディダス", "#"
+                %li.pc-header-nav-parent
+                  %h3
+                    = link_to "ブランド一覧", "#"
+      / マイページ
+      .l-right
+        %ul.pc-header-user-nav
+          %li
+            = link_to "#", class: "sp-header-user-icon pc-header-nav-root" do
+              %figure
+                %div
+                  = image_tag "/assets/member_photo_noimage_thumb.png", size: "32", alt: ""
+              %div マイページ
+            .pc-header-user-box.pc-header-mypage-box
+              .pc-header-mypage-state.text-center
+                %figure
+                  %div
+                    = image_tag "/assets/member_photo_noimage_thumb.png", size: "60", alt: ""
+                  %figcaption aaaaaaaaaa
+                %ul.pc-header-mypage-review-listing
+                  %li
+                    = link_to "評価: 0", "#"
+                  %li
+                    = link_to "出品数: 0", "#"
+                %ul.pc-header-mypage-sales-point
+                  %li
+                    = link_to "#", class: "clearfix" do
+                      .l-left 売上金
+                      .l-right
+                        ¥ 0
+                        %i.fas.fa-angle-right
+                  %li
+                    = link_to "#", class: "clearfix" do
+                      .l-left ポイント
+                      .l-right
+                        P 0
+                        %i.fas.fa-angle-right
+              %ul.mypage-nav-list
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    いいね！一覧
+                    %i.fas.fa-angle-right
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    出品した商品 - 出品中
+                    %i.fas.fa-angle-right
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    出品した商品 - 取引中
+                    %i.fas.fa-angle-right
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    出品した商品 - 売却済み
+                    %i.fas.fa-angle-right
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    購入した商品 - 取引中
+                    %i.fas.fa-angle-right
+                %li
+                  = link_to "#", class: "mypage-nav-list-item" do
+                    購入した商品 - 過去の取引
+                    %i.fas.fa-angle-right
+          %li
+            = link_to "https://www.mercari.com/jp/mypage/notification/", class: "pc-header-nav-root" do
+              %i.far.fa-bell
+              %span お知らせ
+              .pc-header-nav-count
+                0
+            %ul.pc-header-user-box.pc-header-notification-box.mypage-item-list
+          %li
+            = link_to "https://www.mercari.com/jp/mypage/todo/", class: "pc-header-nav-root" do
+              %i.fas.fa-check
+              %span やることリスト
+            %ul.pc-header-user-box.pc-header-todo-box.mypage-item-list
