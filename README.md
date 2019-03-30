@@ -81,19 +81,6 @@
 - has_one :deliveries, dependent: :destroy
 
 
-##categoriesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|category_name|string|null: false|
-|parent_id|reference|foreign_key: parent_id|
-|item_id|reference|null: false, foreign_key: true|
-
-### Association
-- has_many :items
-- belongs_to :parent, class_name: :Category
-- has_many :children, class_name: :Category
-
-
 ## sizesテーブル
 |Column|Type|Options|
 |------|----|-------|
