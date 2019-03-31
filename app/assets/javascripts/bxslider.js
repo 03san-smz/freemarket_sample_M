@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $('.bxslider').bxSlider({
     auto: true,
     adaptiveHeight: true
