@@ -1,6 +1,462 @@
-.top-slider
-  %ul.top-slider__contents
-    %li.top-slider__content
-      = link_to '' class: re
-    %li.top-slider__content
-    %li.top-slider__content
+/ トップカルーセル
+%section.top-carousel
+  %ul.bxslider
+    %li.top-carousel__slider-1
+    %li.top-carousel__slider-2
+    %li.top-carousel__slider-3
+    %li.top-carousel__slider-4
+      .slider-content
+        .slider-content__left
+          %h2 スマホでかんたん<br/>フリマアプリ
+          %p メルカリはスマホカメラからすぐに出品できる<br/>購入時も安心な独自システムのアプリです
+          .slider-content__store
+            = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?1355968437'), '#', class: 'app-icon'
+            = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?1355968437'), '#', class: 'google-icon'
+        .slider-content__right
+          = image_tag 'main_content_pc.png'
+
+/ ピックアップカテゴリー
+%section.pickup-container
+  %h2.pickup-head ピックアップカテゴリー
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'レディース 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'AIMER.jpg'
+          .item-box__body
+            %h3.item-box-name AIMER ドレス
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,300
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 11
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'AIMER.jpg'
+          .item-box__body
+            %h3.item-box-name AIMER ドレス
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,300
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 11
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'AIMER.jpg'
+          .item-box__body
+            %h3.item-box-name AIMER ドレス
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,300
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 11
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'AIMER.jpg'
+          .item-box__body
+            %h3.item-box-name AIMER ドレス
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,300
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 11
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'メンズ 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'menz-new.jpg'
+          .item-box__body
+            %h3.item-box-name 値下げ 掲載期間4月7日 カジュアルベスト 二着 グレー＆ブラック
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,150
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 5
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'menz-new.jpg'
+          .item-box__body
+            %h3.item-box-name 値下げ 掲載期間4月7日 カジュアルベスト 二着 グレー＆ブラック
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,150
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 5
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'menz-new.jpg'
+          .item-box__body
+            %h3.item-box-name 値下げ 掲載期間4月7日 カジュアルベスト 二着 グレー＆ブラック
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,150
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 5
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'menz-new.jpg'
+          .item-box__body
+            %h3.item-box-name 値下げ 掲載期間4月7日 カジュアルベスト 二着 グレー＆ブラック
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,150
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 5
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'ベビー・キッズ 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'baby-new.jpg'
+          .item-box__body
+            %h3.item-box-name ☆新品☆ ファミリア ベビー食器
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 3,800
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'baby-new.jpg'
+          .item-box__body
+            %h3.item-box-name ☆新品☆ ファミリア ベビー食器
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 3,800
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'baby-new.jpg'
+          .item-box__body
+            %h3.item-box-name ☆新品☆ ファミリア ベビー食器
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 3,800
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'baby-new.jpg'
+          .item-box__body
+            %h3.item-box-name ☆新品☆ ファミリア ベビー食器
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 3,800
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'コスメ・香水・美容 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'cosme.jpg'
+          .item-box__body
+            %h3.item-box-name ヴィクトリアシークレット ボディークリーム crush
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 2
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'cosme.jpg'
+          .item-box__body
+            %h3.item-box-name ヴィクトリアシークレット ボディークリーム crush
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 2
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'cosme.jpg'
+          .item-box__body
+            %h3.item-box-name ヴィクトリアシークレット ボディークリーム crush
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 2
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'cosme.jpg'
+          .item-box__body
+            %h3.item-box-name ヴィクトリアシークレット ボディークリーム crush
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 2,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 2
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+/ ピックアップブランド
+%section.pickup-container
+  %h2.pickup-head ピックアップブランド
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'シャネル 新着アイテム  ', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'chanel.jpg'
+          .item-box__body
+            %h3.item-box-name CHANEL ラインストーン パテントレザーバッグ★Gカ一ド付き★正規店購入
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 109,999
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'chanel.jpg'
+          .item-box__body
+            %h3.item-box-name CHANEL ラインストーン パテントレザーバッグ★Gカ一ド付き★正規店購入
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 109,999
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'chanel.jpg'
+          .item-box__body
+            %h3.item-box-name CHANEL ラインストーン パテントレザーバッグ★Gカ一ド付き★正規店購入
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 109,999
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'chanel.jpg'
+          .item-box__body
+            %h3.item-box-name CHANEL ラインストーン パテントレザーバッグ★Gカ一ド付き★正規店購入
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 109,999
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'ルイ ヴィトン 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'VUITTON.jpg'
+          .item-box__body
+            %h3.item-box-name ルイヴィトン新品未使用
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 180,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'VUITTON.jpg'
+          .item-box__body
+            %h3.item-box-name ルイヴィトン新品未使用
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 180,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'VUITTON.jpg'
+          .item-box__body
+            %h3.item-box-name ルイヴィトン新品未使用
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 180,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'VUITTON.jpg'
+          .item-box__body
+            %h3.item-box-name ルイヴィトン新品未使用
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 180,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 4
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'シュプリーム 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'supreme.jpg'
+          .item-box__body
+            %h3.item-box-name supreme Stripe Velour Raglan L/S Polo
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 23,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'supreme.jpg'
+          .item-box__body
+            %h3.item-box-name supreme Stripe Velour Raglan L/S Polo
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 23,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'supreme.jpg'
+          .item-box__body
+            %h3.item-box-name supreme Stripe Velour Raglan L/S Polo
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 23,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'supreme.jpg'
+          .item-box__body
+            %h3.item-box-name supreme Stripe Velour Raglan L/S Polo
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 23,000
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
+
+  %section.items-box.clearfix
+    %h3.items-box__new
+      = link_to 'ナイキ 新着アイテム', '#'
+    .items-box__content.clearfix
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'NIKE.jpg'
+          .item-box__body
+            %h3.item-box-name 未着用新品／ナイキ エアマックス97 24センチ
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 13,960
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 51
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'NIKE.jpg'
+          .item-box__body
+            %h3.item-box-name 未着用新品／ナイキ エアマックス97 24センチ
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 13,960
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 51
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'NIKE.jpg'
+          .item-box__body
+            %h3.item-box-name 未着用新品／ナイキ エアマックス97 24センチ
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 13,960
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 51
+              %p.item-box-num__tax (税込)
+      %section.item-box
+        = link_to '#' do
+          .item-box__photo
+            = image_tag 'NIKE.jpg'
+          .item-box__body
+            %h3.item-box-name 未着用新品／ナイキ エアマックス97 24センチ
+            .item-box-num.clearfix
+              .item-box-num__price ¥ 13,960
+              .item-box-num__likes
+                = fa_icon 'heart-o', class: 'likes-icon'
+                %span 51
+              %p.item-box-num__tax (税込)
+    .items-box__view-all
+      = link_to 'すべての商品を見る', '#'
