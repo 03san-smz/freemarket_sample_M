@@ -1,0 +1,7 @@
+class TransactionsController < ApplicationController
+  def new
+  end
+
+  def edit
+  end
+end

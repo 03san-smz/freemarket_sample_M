@@ -1,0 +1,37 @@
+.default-container
+  = render "shared/global-header"
+
+  %nav.bread-crumbs
+    %ul
+      %li
+        = link_to "メルカリ ", "https://www.mercari.com/jp/"
+        %i.fas.fa-angle-right
+      %li
+        = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
+        %i.fas.fa-angle-right
+      %li
+        支払い方法
+
+  %main.l-container.clearfix
+    .l-content
+      %section.l-chapter-container
+        %h2.l-chapter-head.bold 支払い方法
+        .l-single-inner
+          %section
+            .l-single-content
+              %h3.l-chapter-sub-head.bold クレジットカード一覧
+            %ul.settings-payment-list
+          %section.settings-add-card
+            .l-single-content
+              = link_to "https://www.mercari.com/jp/mypage/card/create/", class: "btn-default btn-red submit_button" do
+                %i.far.fa-credit-card>
+                クレジットカードを追加する
+          .settings-not-regist
+            = link_to "https://www.mercari.com/jp/help_center/category/6/", target: "_blank" do
+              %span 支払い方法について
+              %i.fas.fa-angle-right
+    = render "shared/global-side-menu"
+
+= render "shared/app-banner"
+= render "shared/global-footer"
+

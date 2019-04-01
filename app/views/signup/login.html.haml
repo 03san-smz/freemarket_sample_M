@@ -1,0 +1,36 @@
+.wrapper-login
+  = render partial: "header_top"
+  .login-main
+    .login-panel
+      .login-panel__no-account
+        %p アカウントをお持ちでない方はこちら
+        = link_to "新規会員登録", "/signup/new"
+
+      .login-panel__form-inner
+        %button#facebook-login.login-panel__form-inner.btn-default.btn-sns-facebook
+          %p.icon-facebook Facebookでログイン
+
+        %button#facebook-login.login-panel__form-inner.btn-default.btn-sns-google
+          %p.icon-google Googleでログイン
+
+          %span.fab.fa-facebook{class: "icon-facebook-log"}
+          %img.icon-google-log{src: "/google.jpg"}/
+
+      .login-panel__form-mail-addres
+        .form-group
+          %input{placeholder: "メールアドレス", class: "input-default"}
+        .form-group
+          %input{placeholder: "パスワード", class: "input-default"}
+        .form-group_recaptcha
+          .recaptcha-checkbox
+          %p.recaptcha__p 私はロボットではありません
+          = link_to "プライバシー", "https://www.google.com/intl/ja/policies/privacy/", class: "google_privacy"
+          = link_to "-利用規約", "https://www.google.com/intl/ja/policies/terms/", class: "google_terms_of_use"
+          %img{src: "/220px-RecaptchaLogo.svg.png"}/
+        .form-group
+          %button.login-submit.btn-default.btn-red ログイン
+          = link_to "パスワードをお忘れの方", "https://www.mercari.com/jp/password/reset/start/"
+
+
+
+  = render partial: "/shared/single-footer"
