@@ -7,13 +7,17 @@
 @import "font-awesome";
 // font-awesomeの設定
 
-
-// itemファイル
+// item
 @import "item/header";
 @import "item/main";
+@import "item/jquery.bxslider";
+@import "item/aside";
+@import "item/footer";
+@import "item/btn";
+
 
 @import "signup/signup";
-/* ユーザー新規登録画面 */
+/* ユーザー新規登録画1面 */
 @import "signup/header_top";
 /*ユーザー新規登録画面のheder 部分テンプレート */
 @import "signup/single_footer";
