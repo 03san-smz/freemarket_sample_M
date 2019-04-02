@@ -1,13 +1,159 @@
-.header{
+// SPヘッダー
+.sp-header {
+  height: 156px;
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+}
+
+.visible-tablet {
+  @media(min-width: 1068px) {
+    display: none;
+  }
+}
+
+.sp-header-btn {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.btn-red {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+}
+
+.sp-header-inner.clearfix {
+  position: relative;
+  padding: 6px 10px 0;
+  @media(min-width: 375px) {
+    padding: 6px 16px 0;
+  }
+  h1.logo {
+    float: left;
+    width: 120px;
+    height: 32px;
+    opacity: 1;
+    transition: all ease-out .3s;
+    a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      img {
+      width: 120px;
+      height: 32px;
+        @media(min-width: 375px) {
+          width: 148px;
+          height: 40px;
+        }
+      }
+    }
+    @media(min-width: 375px) {
+      padding-top: 1px;
+      width: 135px;
+      height: 39px;
+    }
+  }
+  .sp-header-user-nav {
+    float: right;
+    margin: 4px 0 0;
+    .sp-header-btn {
+      margin-right: 3px;
+      @media(min-width: 375px) {
+        padding: 0 10px;
+        line-height: 30px;
+      }
+    }
+    .sp-header-signup {
+      border: 1px solid #0099e8;
+      background: #fff;
+      color: #0099e8;
+      &:hover {
+        background: #0099e8;
+        color: #fff;
+      }
+      @media(min-width: 375px) {
+        padding: 0 10px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+.search-bar {
+  margin: 13px 10px 6px;
+  position: relative;
+  .sp-header-search {
+    background: #e6e6e6;
+    border-color: transparent;
+    border-radius: 2px;
+    width: 100%;
+    height: 36px;
+    padding: 24px 20px 24px 10px;
+    transition: all ease-out .3s;
+  }
+  .icon-search {
+    height: 36px;
+    line-height: 38px;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: 6px;
+    width: 36px;
+    z-index: 1;
+  }
+}
+
+.sp-header-nav {
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  height: 44px;
+  line-height: 42px;
+  a {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    color: #333;
+    i {
+      color: #EA352D;
+      font-size: 12px;
+      margin-right: 4px;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+// PCヘッダー
+.header {
   position: relative;
   z-index: 1001;
   background: #fff;
 }
 
-.header-inner{
-  width: 1020px;
+.visible-pc {
+  display: none;
+  @media(min-width: 1068px){
+    display: block;
+  }
+}
+
+.header-inner {
+  width: 700px;
   margin: 0 auto;
   padding: 8px 0 0;
+  @media(min-width: 1068px) {
+    width: 1020px;
+  }
 }
 
 // ヘッダー上
@@ -38,7 +184,7 @@
     font-size: 16px;
     outline: 0;
   }
-  .icon-search{
+  .icon-search {
     position: absolute;
     top: 7px;
     right: 8px;
@@ -50,7 +196,7 @@
 }
 
 // ヘッダー下 ナビ(左)
-.header-nav{
+.header-nav {
   margin: 8px 0 0;
 }
 
@@ -78,6 +224,7 @@
         &:hover {
           color: #0099e8;
           opacity: 1;
+          text-decoration: none;
         }
         .category-icon {
           color: #EA352D;
@@ -118,6 +265,7 @@
         background: #ea352d;
         color: #fff;
         opacity: 1;
+        text-decoration: none;
         }
       }
     }
@@ -147,6 +295,7 @@
       &:hover {
         background: #eee;
         opacity: 1;
+        text-decoration: none;
       }
     }
   }
@@ -197,6 +346,7 @@
         line-height: 32px;
         &:hover {
           color: #0099e8;
+          text-decoration: none;
         }
         .brand-icon {
           color: #EA352D;
@@ -228,6 +378,7 @@
             &:hover {
             background-color: #ea352d;
             color: #fff;
+            text-decoration: none;
             }
           }
         }
@@ -241,7 +392,7 @@
   float: right;
   .header-nav-rigth__login {
     display: inline-block;
-    a{
+    a {
       display: block;
       padding: 0 10px;
       line-height: 30px;
@@ -250,12 +401,15 @@
       background-color: #ea352d;
       border: 1px solid #ea352d;
       color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   .header-nav-rigth__signup {
     display: inline-block;
     margin: 0 0 0 8px;
-    a{
+    a {
       display: block;
       border: 1px solid #0099e8;
       background-color: #fff;
@@ -268,7 +422,7 @@
       &:hover {
         background-color: #0099e8;
         color: #fff;
-
+        text-decoration: none;
       }
     }
   }

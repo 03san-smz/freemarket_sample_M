@@ -1,49 +1,69 @@
-.header-inner
-  .header-search.clearfix
-    %h1.header-search__logo
+.sp-header.visible-tablet
+  .sp-header-inner.clearfix
+    %h1.logo
       = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?3703848211', width: '134', height: '36', alt: "メルカリ"), "#"
-    .header-search__keyword
-      = form_for @item, url: "#" do |f|
-        = f.search_field :name, class: 'input-default', placeholder: '何かお探しですか？'
-        = fa_icon "search", class: "icon-search"
+    .sp-header-user-nav.clearfix
+      = link_to 'ログイン', "#", class: 'sp-header-btn btn-red'
+      = link_to '新規会員', "#", class: 'sp-header-btn sp-header-signup'
+  .search-bar
+    = form_for @item, url: "#" do |f|
+      = f.search_field :name, class: 'sp-header-search input-default', placeholder: '何をお探しですか？'
+      = fa_icon "search", class: "icon-search"
+  .sp-header-nav
+    = link_to root_path do
+      = fa_icon 'list-ul'
+      %span カテゴリーから探す
+    = link_to root_path do
+      = fa_icon 'tags'
+      %span ブランドから探す
 
-  .header-nav.clearfix
-    %nav.header-nav-left
-      %ul
-        %li.header-nav-left__category
-          %h2
-            = link_to root_path do
-              = fa_icon 'list-ul', class: 'category-icon'
-              %span カテゴリーから探す
-          = render 'category-menu'
+.header.visible-pc
+  .header-inner
+    .header-search.clearfix
+      %h1.header-search__logo
+        = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?3703848211', width: '134', height: '36', alt: "メルカリ"), "#"
+      .header-search__keyword
+        = form_for @item, url: "#" do |f|
+          = f.search_field :name, class: 'input-default', placeholder: '何かお探しですか？'
+          = fa_icon "search", class: "icon-search"
 
-        %li.header-nav-left__brand
-          %h2
-            = link_to root_path do
-              = fa_icon 'tags', class: 'brand-icon'
-              %span ブランドから探す
-            %ul
-              %li
-                %h3
-                  = link_to 'シャネル', '#'
-              %li
-                %h3
-                  = link_to 'ナイキ', '#'
-              %li
-                %h3
-                  = link_to 'ルイ ヴィトン', '#'
-              %li
-                %h3
-                  = link_to 'シュプリーム', '#'
-              %li
-                %h3
-                  = link_to 'アディダス', '#'
-              %li
-                %h3
-                  = link_to 'ブランド一覧', '#'
+    .header-nav.clearfix
+      %nav.header-nav-left
+        %ul
+          %li.header-nav-left__category
+            %h2
+              = link_to root_path do
+                = fa_icon 'list-ul', class: 'category-icon'
+                %span カテゴリーから探す
+            = render 'category-menu'
 
-    %ul.header-nav-rigth
-      %li.header-nav-rigth__login
-        = link_to 'ログイン', "#"
-      %li.header-nav-rigth__signup
-        = link_to '新規会員登録', "#"
+          %li.header-nav-left__brand
+            %h2
+              = link_to root_path do
+                = fa_icon 'tags', class: 'brand-icon'
+                %span ブランドから探す
+              %ul
+                %li
+                  %h3
+                    = link_to 'シャネル', '#'
+                %li
+                  %h3
+                    = link_to 'ナイキ', '#'
+                %li
+                  %h3
+                    = link_to 'ルイ ヴィトン', '#'
+                %li
+                  %h3
+                    = link_to 'シュプリーム', '#'
+                %li
+                  %h3
+                    = link_to 'アディダス', '#'
+                %li
+                  %h3
+                    = link_to 'ブランド一覧', '#'
+
+      %ul.header-nav-rigth
+        %li.header-nav-rigth__login
+          = link_to 'ログイン', "#"
+        %li.header-nav-rigth__signup
+          = link_to '新規会員登録', "#"

@@ -1,0 +1,15 @@
+.aside
+  .banner
+    .banner-inner
+      %h2 スマホでかんたんフリマアプリ
+      %p 今すぐ無料ダウンロード！
+      .banner-left.clearfix
+        .banner-left__mercari-img
+          = image_tag 'mercari_icon', width: '68'
+        %ul.banner-left__other-icon.clearfix
+          %li.left
+            = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?1355968437'), '#'
+          %li.right
+            = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?1355968437'), '#'
+    .banner-inner-right
+      = image_tag 'download_content_pc.png'
