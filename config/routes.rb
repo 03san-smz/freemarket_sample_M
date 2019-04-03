@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :signup, only: [:new]
   resources :transactions, only: [:new, :edit]
   get 'signup/login' => 'signup#login'
+  get 'mypage/identification' => 'mypage#edit_identification'
 end
