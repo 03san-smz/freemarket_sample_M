@@ -6,7 +6,7 @@
           = image_tag "/assets/logo.svg", size: "134x36", alt: "mercari"
       %form.pc-header-form.l-right{action: "https://www.mercari.com/jp/search/"}
         %input.input-default{name: "keyword", placeholder: "キーワードから探す", type: "search", value: ""}/
-        %i.fas.fa-search
+        = fa_icon "search"
     .pc-header-nav-box.clearfix
       %nav.l-left
         %ul.pc-header-nav
@@ -2664,47 +2664,47 @@
                       .l-left 売上金
                       .l-right
                         ¥ 0
-                        %i.fas.fa-angle-right
+                        = fa_icon "angle-right"
                   %li
                     = link_to "#", class: "clearfix" do
                       .l-left ポイント
                       .l-right
                         P 0
-                        %i.fas.fa-angle-right
+                        = fa_icon "angle-right"
               %ul.mypage-nav-list
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     いいね！一覧
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     出品した商品 - 出品中
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     出品した商品 - 取引中
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     出品した商品 - 売却済み
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     購入した商品 - 取引中
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
                 %li
                   = link_to "#", class: "mypage-nav-list-item" do
                     購入した商品 - 過去の取引
-                    %i.fas.fa-angle-right
+                    = fa_icon "angle-right"
           %li
             = link_to "https://www.mercari.com/jp/mypage/notification/", class: "pc-header-nav-root" do
-              %i.far.fa-bell
+              = fa_icon "bell-o"
               %span お知らせ
               .pc-header-nav-count
                 0
             %ul.pc-header-user-box.pc-header-notification-box.mypage-item-list
           %li
             = link_to "https://www.mercari.com/jp/mypage/todo/", class: "pc-header-nav-root" do
-              %i.fas.fa-check
+              = fa_icon "check"
               %span やることリスト
             %ul.pc-header-user-box.pc-header-todo-box.mypage-item-list

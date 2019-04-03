@@ -15,10 +15,10 @@
           = link_to "メルカリロゴ利用ガイドライン", "https://www.mercari.com/jp/logo-guidelines/"
         %li.footer-social-link
           = link_to "https://twitter.com/mercari_jp", target: "_blank" do
-            %i.fab.fa-twitter
+            = fa_icon "twitter-square"
         %li.footer-social-link
           = link_to "https://www.facebook.com/mercarijp", target: "_blank" do
-            %i.fab.fa-facebook
+            = fa_icon "facebook-square"
     .footer-cell
       %h2.footer-head ヘルプ＆ガイド
       %ul
@@ -78,4 +78,4 @@
       %small &copy; 2019 Mercari
 = link_to "https://www.mercari.com/jp/sell/", class: "footer-sell-btn" do
   %div 出品
-  %i.fas.fa-camera
+  = fa_icon "camera"
