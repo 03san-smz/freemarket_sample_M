@@ -5,10 +5,10 @@
     %ul
       %li
         = link_to "メルカリ ", "https://www.mercari.com/jp/"
-        %i.fas.fa-angle-right
+        = fa_icon "angle-right"
       %li
         = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
-        %i.fas.fa-angle-right
+        = fa_icon "angle-right"
       %li
         支払い方法
 
@@ -24,12 +24,12 @@
           %section.settings-add-card
             .l-single-content
               = link_to "https://www.mercari.com/jp/mypage/card/create/", class: "btn-default btn-red submit_button" do
-                %i.far.fa-credit-card>
+                = fa_icon "credit-card"
                 クレジットカードを追加する
           .settings-not-regist
             = link_to "https://www.mercari.com/jp/help_center/category/6/", target: "_blank" do
               %span 支払い方法について
-              %i.fas.fa-angle-right
+              = fa_icon "angle-right"
     = render "shared/global-side-menu"
 
 = render "shared/app-banner"
