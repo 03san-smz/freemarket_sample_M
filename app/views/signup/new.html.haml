@@ -16,8 +16,8 @@
           %button#google-login.main-inner-content__a_btn-default.btn-sns.main-inner-content__button_sns-google
             %p.icon-fgoogle Googleで登録
 
-          %span.far.fa-envelope{class: "main-inner-content__icon_mail"}
-          %span.fab.fa-facebook{class: "main-inner-content__icon_facebook-log"}
+          = fa_icon "envelope main-inner-content__icon_mail"
+          = fa_icon "facebook main-inner-content__icon_facebook-log"
           %img.main-inner-content__icon_google-log{src: "/google.jpg"}/
 
   = render partial: "/shared/single-footer"
