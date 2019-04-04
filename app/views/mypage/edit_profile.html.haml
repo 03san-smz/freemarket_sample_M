@@ -18,13 +18,11 @@
       %form.mypage-profile
         .setting-profile-icon
           %figure
-            %img{src: "//static.mercdn.net/images/member_photo_noimage_thumb.png"}
-          %input{type: "text", value: "森田雄一郎"}
+            = image_tag("//static.mercdn.net/images/member_photo_noimage_thumb.png")
+          = text_field :input, :name ,value:"森田雄一郎"
         .setthing-profile-content
-          %textarea{name: "introduction", placeholder: "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪"}
-          %button{type: "submit", class: "btn-default btn-red"}変更する
-
-
+          = text_area :introduction, :comment ,placeholder: '例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪'
+          = submit_tag '変更する', class: 'btn-default btn-red'
 
 = render "items/aside"
 = render "shared/global-footer"
