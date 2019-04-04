@@ -1,0 +1,30 @@
+.default-container-mypage
+  = render "shared/global-header"
+  %nav.bread-crumbs
+    %ul
+      %li
+        = link_to "メルカリ ", "https://www.mercari.com/jp/"
+        = fa_icon "angle-right"
+      %li
+        = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
+        = fa_icon "angle-right"
+      %li
+        本人情報の登録
+
+  .l-container-mypage
+    = render "shared/global-side-menu"
+    .l-content-mypage-profile
+      %h2.l-chapter-head-mypage-profile プロフィール
+      %form.mypage-profile
+        .setting-profile-icon
+          %figure
+            %img{src: "//static.mercdn.net/images/member_photo_noimage_thumb.png"}
+          %input{type: "text", value: "森田雄一郎"}
+        .setthing-profile-content
+          %textarea{name: "introduction", placeholder: "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪"}
+          %button{type: "submit", class: "btn-default btn-red"}変更する
+
+
+
+= render "items/aside"
+= render "shared/global-footer"
