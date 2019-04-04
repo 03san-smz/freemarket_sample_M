@@ -1,0 +1,345 @@
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea {
+  border-radius: 0;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+select {
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+// フォーム項目
+.form-group {
+  margin: 40px 0 0;
+  &:first-child {
+    margin: 0;
+  }
+  label {
+    font-weight: 600;
+    + .textarea-default {
+      margin: 8px 0 0;
+    }
+  }
+  .input-default {
+    width: 100%;
+    margin: 8px 0 0;
+    + label {
+      margin: 24px 0 0;
+    }
+  }
+  .select-wrap {
+    margin: 8px 0 0;
+  }
+  select {
+    width: 100%;
+  }
+  .textarea-default {
+    margin: 16px 0 0;
+  }
+}
+
+// フォーム必須項目ラベル
+.form-require {
+  background: #ea352d;
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.form-question {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #0099e8;
+  color: #fff;
+  line-height: 14px;
+  font-size: 12px;
+  text-align: center;
+}
+
+// インプットエリアの初期設定の入力文字表示
+.input-default {
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 16px;
+  &:focus {
+    border-color: #0099e8;
+  }
+}
+
+// セレクター設定
+.select-wrap {
+  position: relative;
+  background: #fff;
+  .fa-angle-down {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    z-index: 2;
+    color: #888;
+    font-size: 22px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+
+.select-default {
+  position: relative;
+  z-index: 2;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  &:disabled {
+    background: #f5f5f5;
+  }
+  &:focus {
+    border-color: #0099e8;
+  }
+}
+
+// テキストエリアの初期設定の入力文字表示
+.textarea-default {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 104px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  &:disabled {
+    background: #f5f5f5;
+  }
+  &:focus {
+    border-color: #0099e8;
+  }
+}
+
+.btn-red {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  &:hover {
+    background: #e62017;
+    color: #fff;
+  }
+}
+
+// フォーム項目
+.sell-form {
+  border-top: 1px solid #eee;
+}
+
+.sell-sub-head {
+  color: #888;
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    float: left;
+  }
+}
+
+.sell-form-box {
+  margin: 40px 0 0;
+  @media screen and (min-width: 768px) {
+    float: right;
+    width: 400px;
+    margin: 0;
+  }
+}
+
+.sell-content {
+  padding: 40px;
+  border-top: 1px solid #eee;
+}
+
+.sell-upload-box {
+  padding: 40px 2.5%;
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    padding: 40px;
+  }
+}
+
+.sell-upload-head {
+  font-size: 16px;
+  + p {
+    margin: 8px 0 0;
+    line-height: 1.5;
+  }
+}
+
+.sell-dropbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px auto 0;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 620px;
+  }
+}
+
+// 販売価格部分
+.sell-price {
+  > li {
+    padding: 24px 0;
+    border-top: 1px solid #ccc;
+    &:first-child {
+      padding: 0 0 24px;
+      border: 0;
+    }
+  }
+  .form-group {
+    .l-left {
+      width: 50%;
+      line-height: 48px;
+    }
+    .l-right {
+      width: 50%;
+    }
+  }
+  .bold {
+    .l-left {
+      font-size: 16px;
+    }
+    .l-right {
+      font-size: 34px;
+    }
+  }
+}
+
+.sell-price-input {
+  text-align: right;
+  > div {
+    display: inline-block;
+    width: 80%;
+    margin: 0 0 0 5%;
+  }
+  .input-default {
+    margin: 0;
+    text-align: right;
+  }
+}
+
+.sell-btn-box {
+  p {
+    line-height: 1.5;
+  }
+  .btn-red {
+    margin: 40px 0 0;
+    span {
+      vertical-align: middle;
+    }
+    .loading {
+      vertical-align: middle;
+      margin: 0 0 0 8px;
+    }
+  }
+  .btn-gray {
+    width: 45%;
+    margin: 24px auto 0;
+  }
+}
+
+// 画像投稿用
+.sell-upload-drop-box pre {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    right: 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+.sell-upload-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  @media screen and (min-width: 768px) {
+    float: left;
+    display: block;
+  }
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.sell-dropbox-container.state-image-number-10 {
+  display: inline;
+  margin: 16px auto 0;
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 620px;
+  }
+  .sell-upload-items-container {
+    display: inline;
+    .sell-upload-items {
+      display: inline;
+      ul {
+        display: inline;
+      }
+    }
+  }
+  .sell-upload-drop-box {
+    position: relative;
+    min-height: 162px;
+    background: #f5f5f5;
+    border: 1px dashed #ccc;
+    font-size: 0;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    margin-left: 2%;
+    &.have-item-0 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.sell-dropbox-container.state-image-number-10 .sell-upload-drop-box {
+  @media screen and (min-width: 768px) {
+    float: right;
+    width: 620px;
+    padding: 40px;
+  }
+}
