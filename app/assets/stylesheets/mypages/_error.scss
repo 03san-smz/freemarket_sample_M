@@ -1,0 +1,59 @@
+.error-container {
+  margin: 24px auto 0;
+  padding: 0 0 40px;
+  @media(min-width: 768px) {
+    margin: 40px auto 0;
+    width: 700px;
+  }
+  @media(min-width: 1068px) {
+    margin: 40px auto 0;
+    width: 1020px;
+  }
+  &__l-content {
+    width: 100%;
+    @media(min-width: 768px) {
+      float: none;
+      width: 700px;
+    }
+    @media(min-width: 1068px) {
+      float: right;
+    }
+    .error404 {
+      background: #fff;
+      padding: 40px;
+      @media(min-width: 768px) {
+        padding: 80px 160px;
+      }
+      img {
+        width: 100%;
+        @media(min-width: 768px) {
+          width: 380px;
+        }
+      }
+    }
+  }
+  &__l-side {
+    margin: 40px auto 0;
+    @media(min-width: 768px) {
+      width: 700px;
+    }
+    @media(min-width: 1068px) {
+      float: left;
+      width: 280px;
+      margin: 0 40px 0 0;
+    }
+    .l-visible-large {
+      display: none;
+      @media(min-width: 1068px) {
+        display: block;
+      }
+      a {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
