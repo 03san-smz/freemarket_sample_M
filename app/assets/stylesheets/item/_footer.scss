@@ -1,3 +1,4 @@
+/* フッター上*/
 .whole-footer {
   padding: 0 20px 10px 20px;
   background: #212121;
@@ -7,101 +8,112 @@
     font-size: 12px;
     line-height: 1.5em;
   }
-}
-
-.main-footer{
-  width: 1020px;
-  margin: 0 auto;
-  @media(max-width: 1068px) {
-    width: 100%;
+  nav {
+    @media(min-width: 768px) {
+      width: 700px;
+      margin: 0 auto;
+    }
+    @media(min-width: 1068px) {
+      width: 1020px;
+    }
   }
 }
 
 .footer-column {
-  width: 23%;
-  padding: 0 40px 0 0;
-  vertical-align: top;
   display: block;
   float: left;
   margin-top: 18px;
+  padding-left: 10px;
+  width: 50%;
+  a {
+    display: block;
+    opacity: 0.7;
+  }
+  &:first-child {
+    padding: 0 10px 0 0;
+    @media(min-width: 1068px) {
+      padding: 0 20px 0 0;
+      width: 20%;
+    }
+  }
+  @media(min-width: 1068px) {
+    width: 23%;
+    padding: 0 40px 0 0;
+    vertical-align: top;
+  }
+  li {
+    margin: 14px 0 0;
+    color: #fff;
+    &:first-child {
+      margin: 16px 0 0;
+    }
+  }
+  li.footer-social {
+    display: inline-block;
+    a {
+      opacity: 1;
+    }
+    i {
+      background: transparent;
+      margin: 16px 18px 0 0;
+    }
+  }
   &__top {
     color: #fff;
     font-size: 16px;
     font-weight: 100;
   }
-  &__left {
-    padding: 0 10px 0 0;
-    float: left;
-    vertical-align: top;
-    width: 50%;
-  }
-  &__right {
+  &__top-cell {
     float: left;
     padding-left: 10px;
     vertical-align: top;
     width: 50%;
-  }
-  ul{
-    li.fast{
-      margin: 16px 0 0;
-      color: #fff;
-    }
-    li.footer-social {
-      display: inline-block;
-      a {
-        opacity: 1;
-        i {
-          background: transparent;
-          margin: 16px 18px 0 0;
-        }
-        .fa-twitter-square {
-          font-size: 30px;
-          color: #fff;
-        }
-        .fa-facebook-square {
-          font-size: 30px;
-          color: #fff;
-        }
-      }
-    }
-    li{
-      margin: 14px 0 0;
-      color: #fff;
-      a {
-        display: block;
-        opacity: 0.7;
-      }
+    &:first-of-type {
+      padding: 0 10px 0 0;
     }
   }
 }
 
-.fast-child {
-  width: 20%;
-  padding: 0 20px 0 0;
+.fa-twitter {
+  font-size: 33px;
 }
 
-.footer-width {
-  margin-top: 18px;
-  padding: 0 40px 0 0;
-  width: 42%;
-  @media(max-width: 1068px) {
-    width: 100%;
-    margin: 30px 0 0;
-    padding: 0;
-  }
+.fa-facebook-square {
+  font-size: 33px;
 }
 
-.footer-lang {
-  width: auto;
-  margin-top: 18px;
+.full-width {
+  width: 100%;
+  margin: 30px 0 0;
   padding: 0;
+  @media(min-width: 1068px) {
+    margin-top: 18px;
+    padding: 0 40px 0 0;
+    width: 42%;
+  }
 }
 
+.footer-nav-lang {
+  margin-top: 35px;
+  padding: 0;
+  @media(min-width: 768px) {
+    width: auto;
+  }
+  @media(min-width: 1068px) {
+    margin-top: 18px;
+  }
+}
+
+
+/* フッター下*/
 .footer-bottom {
-  margin: 30px auto 20px;
-  width: 1020px;
-  @media(max-width: 768px) {
-    width: 100%;
+  margin: 50px auto 0;
+  @media(min-width: 768px) {
+    width: 700px;
+  }
+  @media(min-width: 1068px) {
+    margin: 30px auto 20px;
+    width: 1020px;
   }
   .footer-logo {
     display: inline-block;
@@ -110,16 +122,17 @@
   }
 }
 
+
+/* コピーライト */
 .footer-copyright {
-  width: 745px;
   display: inline-block;
   margin: 8px 0 0;
   text-align: center;
   vertical-align: sub;
-  @media(max-width: 768px) {
-    width: 100%;
+  @media(min-width: 1068px) {
+    width: 745px;
   }
-  span {
+  small {
     font-size: 12px;
   }
 }

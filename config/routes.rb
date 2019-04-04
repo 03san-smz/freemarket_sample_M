@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :transactions, only: [:new, :edit]
   get 'signup/login' => 'signup#login'
   get 'mypage/identification' => 'mypage#edit_identification'
+  get 'mypage' => 'mypages#index'
 end
