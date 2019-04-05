@@ -8,7 +8,7 @@
         .sell-container-inner
           %h2.l-single-head.bold 商品の情報を入力
           %form.sell-form
-          = form_for @sale, url:{:action => :new}, html:{class: "sell-form"} do |f|
+          = form_for @sale, url:{ :action => :new }, html:{ class: "sell-form" } do |f|
             / 出品画像
             .sell-upload-box
               %h3.sell-upload-head.bold
@@ -31,12 +31,12 @@
                   商品名
                   %span.form-require 必須
                 %div
-                  %input.input-default{placeholder: "商品名（必須 40文字まで)", value: ""}/
+                  %input.input-default{ placeholder: "商品名（必須 40文字まで)", value: "" }/
               .form-group
                 %label
                   商品の説明
                   %span.form-require 必須
-                %textarea.textarea-default{placeholder: "商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。", rows: "5"}
+                %textarea.textarea-default{ placeholder: "商品の説明（必須 1,000文字以内）（色、素材、重さ、定価、注意点など）例）2010年頃に1万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいのでおすすめです。", rows: "5" }
             / 大カテゴリー・商品の詳細
             .sell-content.clearfix
               %h3.sell-sub-head.bold 商品の詳細
@@ -49,20 +49,20 @@
                   %div
                     .select-wrap
                       %select.select-default
-                        %option{value: ""} ---
-                        %option{value: ""} レディース
-                        %option{value: ""} メンズ
-                        %option{value: ""} ベビー・キッズ
-                        %option{value: ""} インテリア・住まい・小物
-                        %option{value: ""} 本・音楽・ゲーム
-                        %option{value: ""} おもちゃ・ホビー・グッズ
-                        %option{value: ""} コスメ・香水・美容
-                        %option{value: ""} 家電・スマホ・カメラ
-                        %option{value: ""} スポーツ・レジャー
-                        %option{value: ""} ハンドメイド
-                        %option{value: ""} チケット
-                        %option{value: ""} 自動車・オートバイ
-                        %option{value: ""} その他
+                        %option{ value: "" } ---
+                        %option{ value: "" } レディース
+                        %option{ value: "" } メンズ
+                        %option{ value: "" } ベビー・キッズ
+                        %option{ value: "" } インテリア・住まい・小物
+                        %option{ value: "" } 本・音楽・ゲーム
+                        %option{ value: "" } おもちゃ・ホビー・グッズ
+                        %option{ value: "" } コスメ・香水・美容
+                        %option{ value: "" } 家電・スマホ・カメラ
+                        %option{ value: "" } スポーツ・レジャー
+                        %option{ value: "" } ハンドメイド
+                        %option{ value: "" } チケット
+                        %option{ value: "" } 自動車・オートバイ
+                        %option{ value: "" } その他
                       = fa_icon "angle-down"
                 / 商品の状態
                 .form-group
@@ -71,13 +71,13 @@
                     %span.form-require 必須
                   .select-wrap
                     %select.select-default
-                      %option{value: ""} ---
-                      %option{value: ""} 新品、未使用
-                      %option{value: ""} 未使用に近い
-                      %option{value: ""} 目立った傷や汚れなし
-                      %option{value: ""} やや傷や汚れあり
-                      %option{value: ""} 傷や汚れあり
-                      %option{value: ""} 全体的に状態が悪い
+                      %option{ value: "" } ---
+                      %option{ value: "" } 新品、未使用
+                      %option{ value: "" } 未使用に近い
+                      %option{ value: "" } 目立った傷や汚れなし
+                      %option{ value: "" } やや傷や汚れあり
+                      %option{ value: "" } 傷や汚れあり
+                      %option{ value: "" } 全体的に状態が悪い
                     = fa_icon "angle-down"
 
             / ・大カテゴリー・配送料について
@@ -93,9 +93,9 @@
                     %span.form-require 必須
                   .select-wrap
                     %select.select-default
-                      %option{value: ""} ---
-                      %option{value: ""} 送料込み(出品者負担)
-                      %option{value: ""} 着払い(購入者負担)
+                      %option{ value: "" } ---
+                      %option{ value: "" } 送料込み(出品者負担)
+                      %option{ value: "" } 着払い(購入者負担)
                     = fa_icon "angle-down"
                 / 発送元地域
                 .form-group
@@ -103,7 +103,7 @@
                     発送元の地域
                     %span.form-require 必須
                   .select-wrap
-                    = f.collection_select :prefecture_id, Prefecture.all, :id, :name, {:prompt => "---"},{ class: "select-default"}
+                    = f.collection_select :prefecture_id, Prefecture.all, :id, :name, { :prompt => "---" },{ class: "select-default" }
                     = fa_icon "angle-down"
                 / 発送までの日数
                 .form-group
@@ -112,10 +112,10 @@
                     %span.form-require 必須
                   .select-wrap
                     %select.select-default
-                      %option{value: ""} ---
-                      %option{value: ""} 1~2日で発送
-                      %option{value: ""} 2~3日で発送
-                      %option{value: ""} 4~7日で発送
+                      %option{ value: "" } ---
+                      %option{ value: "" } 1~2日で発送
+                      %option{ value: "" } 2~3日で発送
+                      %option{ value: "" } 4~7日で発送
                     = fa_icon "angle-down"
 
             / 大カテゴリー・販売価格、手数料
@@ -134,7 +134,7 @@
                       .l-right.sell-price-input
                         ¥
                         %div
-                          %input.input-default{placeholder: "例）300", value: ""}/
+                          %input.input-default{ placeholder: "例）300", value: "" }/
                   %li.clearfix
                     .l-left
                       販売手数料 (10%)
