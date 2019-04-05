@@ -7,11 +7,7 @@ Rails.application.routes.draw do
     end
   end
   resources :transactions, only: [:new, :edit]
-  resources :mypage, only: [:edit_profile, :edit_identification] do
-    member do
-      get 'edit_profile'
-      get 'edit_identification'
-    end
-  end
+  resources :identification, only: [:edit]
+  resources :profile, onry: [:edit]
   resources :sales, only: [:new]
 end
