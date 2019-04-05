@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'items#index'
+  get 'mypage', to: 'mypages#index'
   resources :signup, only: [:new, :login] do
     collection do
       get 'login'
@@ -12,4 +13,5 @@ Rails.application.routes.draw do
       get 'edit_identification'
     end
   end
+  resources :sales, only: [:new]
 end

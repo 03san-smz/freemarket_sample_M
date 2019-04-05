@@ -15,6 +15,10 @@
 @import "item/footer";
 @import "item/btn";
 
+// mypages
+@import "mypages/bread_scrap";
+@import "mypages/error";
+
 
 @import "signup/signup";
 /* ユーザー新規登録画1面 */
@@ -22,7 +26,6 @@
 /*ユーザー新規登録画面のheder 部分テンプレート */
 @import "signup/single_footer";
 // ユーザー新規登録画面のfooter 部分テンプレート
-
 
 @import "modules/initial";
 // 初期設定
@@ -42,3 +45,5 @@
 // 本人情報の登録編集画面
 @import "mypage/profile";
 // 本人プロフィールの編集画面
+@import "modules/sells";
+// 商品販売用
