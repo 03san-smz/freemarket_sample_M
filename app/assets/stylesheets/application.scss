@@ -27,7 +27,6 @@
 @import "signup/single_footer";
 // ユーザー新規登録画面のfooter 部分テンプレート
 
-
 @import "modules/initial";
 // 初期設定
 @import "modules/transaction";
@@ -44,3 +43,5 @@
 // ログイン画面
 @import "mypage/identification";
 // 本人情報の登録編集画面
+@import "modules/sells";
+// 商品販売用
