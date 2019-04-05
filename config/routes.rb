@@ -13,4 +13,6 @@ Rails.application.routes.draw do
       get 'edit_identification'
     end
   end
+  resources :sales, only: [:new]
+  get 'mypage', to: 'mypages#index'
 end
