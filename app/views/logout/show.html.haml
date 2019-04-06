@@ -1,0 +1,22 @@
+.default-container-mypage
+  = render "shared/global-header"
+  %nav.bread-crumbs
+    %ul
+      %li
+        = link_to "メルカリ ", "https://www.mercari.com/jp/"
+        = fa_icon "angle-right"
+      %li
+        = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
+        = fa_icon "angle-right"
+      %li
+        本人情報の登録
+
+  .l-container-mypage
+    = render "shared/global-side-menu"
+    %form.l-single-inner-m{action: "/"}
+      %button.btn-default-logout.btn-red-logout ログアウト
+      .l-single-content-m
+
+
+= render "items/aside"
+= render "shared/global-footer"

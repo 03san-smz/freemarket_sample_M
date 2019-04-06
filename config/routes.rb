@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       get 'login'
     end
   end
+  resources :logout, only: [:show, :destroy]
   resources :transactions, only: [:new, :edit]
   resources :identification, only: [:edit]
   resources :profile, onry: [:edit]
