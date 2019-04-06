@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'items#index'
-  get 'mypage', to: 'mypages#index'
+  resources :mypages, only: [:index]
   resources :signup, only: [:new, :login] do
     collection do
       get 'login'
