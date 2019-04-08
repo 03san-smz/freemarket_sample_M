@@ -1,8 +1,8 @@
 .sp-header.visible-tablet
   .sp-header-inner.clearfix
-    .logo
+    .sp-header-inner__logo
       = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?3703848211', width: '134', height: '36', alt: "メルカリ"), "#"
-    .sp-header-user-nav.clearfix
+    .sp-header-inner__nav.clearfix
       = link_to 'ログイン', "#", class: 'sp-header-btn btn-red'
       = link_to '新規会員', "#", class: 'sp-header-btn sp-header-signup'
   .search-bar
@@ -28,16 +28,16 @@
           = fa_icon "search", class: "icon-search"
 
     .header-nav.clearfix
-      %nav.header-nav-left
+      %nav.header-nav__left
         %ul
-          %li.header-nav-left__category
+          %li.header-nav__left--category
             %h2
               = link_to root_path do
                 = fa_icon 'list-ul', class: 'category-icon'
                 %span カテゴリーから探す
             = render 'items/category-menu'
 
-          %li.header-nav-left__brand
+          %li.header-nav__left--brand
             %h2
               = link_to root_path do
                 = fa_icon 'tags', class: 'brand-icon'
@@ -62,12 +62,12 @@
                   %h3
                     = link_to 'ブランド一覧', '#'
 
-      .header-nav-rigth
+      .header-nav__rigth
         / 未ログイン
         %ul
-          %li.header-nav-rigth__login
+          %li.header-nav__rigth--login
             = link_to 'ログイン', "#"
-          %li.header-nav-rigth__signup
+          %li.header-nav__rigth--signup
             = link_to '新規会員登録', "#"
         / ログイン
         / %ul.header-nav-rigth__list

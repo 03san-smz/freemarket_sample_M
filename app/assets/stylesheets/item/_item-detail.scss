@@ -1,4 +1,4 @@
-.item-box-detail {
+.item-detail {
   background: #fff;
   margin: 40px auto 0;
   padding: 24px 16px 55px 16px;
@@ -6,13 +6,13 @@
     width: 700px;
     padding: 24px 40px 40px;
   }
-  .item-name {
+  &__name {
     font-size: 24px;
     text-align: center;
     word-wrap: break-word;
     line-height: 1.4;
   }
-  .item-wording {
+  &__wording {
     margin: 8px 0 0;
     font-size: 14px;
     color: #888;
@@ -23,9 +23,10 @@
   }
 }
 
-.item-main-content {
+// メインスライダー
+.item-main {
   margin: 16px 0 0;
-  .item-photo {
+  .item-main-photo {
     min-width: 280px;
     max-width: 360px;
     min-height: 280px;
@@ -38,12 +39,10 @@
       min-height: 375px;
     }
   }
-}
-
-// メインスライダー
-.photo-slider {
-  align-items: center;
-  display: flex;
+  .photo-slider {
+    align-items: center;
+    display: flex;
+  }
 }
 
 // サムネイル
@@ -62,33 +61,73 @@
   }
 }
 
-
-.item-sold-out-badge {
-  &::after {
-    border-width: 120px 120px 0 0;
-    border-color: #ea352d transparent;
+// アイテムプライス
+.item-price-box {
+  text-align: center;
+  margin: 24px 0 0;
+  &__price {
+    margin: 0 8px 0 0;
+    font-size: 32px;
     @media(min-width: 768px) {
-      border-width: 100px 100px 0 0;
+      margin: 0 16px 0 0;
+      font-size: 50px;
     }
   }
-  div {
-    top: 20px;
-    font-size: 26px;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-    color: #fff;
-    transform: rotate(-45deg);
-    letter-spacing: 2px;
-    font-weight: 600;
-    @media(min-width: 768px) {
-      top: 24px;
-      font-size: 28px;
-    }
+  &__tax {
+    font-size: 10px;
+  }
+  &__fee {
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+// アイテムプライス SP
+.visible-sp {
+  @media(min-width: 768px) {
+    display: none;
   }
 }
 
-.item-detail-table {
+// 購入ボタン
+.item-btn-client {
+  display: block;
+  height: 56px;
+  margin: 16px 0 0;
+  background: #ea352d;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  @media(min-width: 768px) {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// 売り切れボタン
+.item-buy-btn {
+  background: #888;
+  display: block;
+  height: 56px;
+  margin: 16px 0 0;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  cursor: not-allowed;
+  @media(min-width: 768px) {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// アイテムテーブル
+.item-table {
   width: 100%;
   max-width: 360px;
   margin: 8px auto 0;
@@ -133,71 +172,6 @@
         vertical-align: middle;
       }
     }
-  }
-}
-
-// アイテムprice
-.item-price-box {
-  text-align: center;
-  margin: 24px 0 0;
-  .item-price {
-    margin: 0 8px 0 0;
-    font-size: 32px;
-    @media(min-width: 768px) {
-      margin: 0 16px 0 0;
-      font-size: 50px;
-    }
-  }
-  .item-tax {
-    font-size: 10px;
-  }
-  .item-shipping-fee {
-    display: inline-block;
-    font-size: 16px;
-  }
-}
-
-.visible-sp {
-  @media(min-width: 768px) {
-    display: none;
-  }
-}
-
-// 購入ボタン
-.item-btn-client {
-  display: block;
-  height: 56px;
-  margin: 16px 0 0;
-  background: #ea352d;
-  color: #fff;
-  line-height: 56px;
-  text-align: center;
-  font-weight: 600;
-  transition: all ease-out .3s;
-  cursor: pointer;
-  @media(min-width: 768px) {
-    font-size: 24px;
-    height: 60px;
-    line-height: 60px;
-  }
-}
-
-// 売り切れボタン
-.item-buy-btn {
-  background: #888;
-  display: block;
-  height: 56px;
-  margin: 16px 0 0;
-  color: #fff;
-  line-height: 56px;
-  text-align: center;
-  font-weight: 600;
-  transition: all ease-out .3s;
-  cursor: not-allowed;
-  @media(min-width: 768px) {
-    font-size: 24px;
-    height: 60px;
-    line-height: 60px;
   }
 }
 

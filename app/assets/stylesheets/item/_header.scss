@@ -32,7 +32,7 @@
   @media(min-width: 375px) {
     padding: 6px 16px 0;
   }
-  .logo {
+  &__logo {
     float: left;
     width: 120px;
     height: 32px;
@@ -57,7 +57,7 @@
       height: 39px;
     }
   }
-  .sp-header-user-nav {
+  &__nav {
     float: right;
     margin: 4px 0 0;
     .sp-header-btn {
@@ -197,47 +197,191 @@
   }
 }
 
-// ヘッダー下 ナビ(左)
 .header-nav {
   margin: 8px 0 0;
-}
-
-.header-nav-left {
-  float: left;
-  &__category {
-    position: relative;
-    display: inline-block;
-    padding: 0 0 0 2px;
-    &:hover {
-      .fast-menu > li {
-        display: block;
+  &__left {
+    float: left;
+    &--category {
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 2px;
+      &:hover {
+        .fast-menu > li {
+          display: block;
+        }
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+        a {
+          font-weight: bold;
+          display: block;
+          color: #333;
+          position: relative;
+          height: 42px;
+          line-height: 32px;
+          &:hover {
+            color: #0099e8;
+            opacity: 1;
+            text-decoration: none;
+          }
+          .category-icon {
+            color: #EA352D;
+            font-size: 14px;
+            margin-right: 4px;
+          }
+        }
       }
     }
-    h2 {
-      font-size: 14px;
-      font-weight: 400;
-      a {
-        font-weight: bold;
-        display: block;
-        color: #333;
-        position: relative;
-        height: 42px;
-        line-height: 32px;
-        &:hover {
-          color: #0099e8;
-          opacity: 1;
-          text-decoration: none;
+    &--brand {
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 22px;
+      &:hover {
+        li {
+          display: block;
         }
-        .category-icon {
-          color: #EA352D;
-          font-size: 14px;
-          margin-right: 4px;
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+        a {
+          font-weight: bold;
+          display: block;
+          color: #333;
+          position: relative;
+          height: 42px;
+          line-height: 32px;
+          &:hover {
+            color: #0099e8;
+            text-decoration: none;
+          }
+          .brand-icon {
+            color: #EA352D;
+            font-size: 14px;
+            margin-right: 4px;
+          }
+        }
+        ul {
+          position: absolute;
+          left: 0;
+          top: 38px;
+          z-index: 1000;
+          background: #fff;
+          box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24);
+          li {
+            display: none;
+            width: 224px;
+            h3 {
+              font-weight: 400;
+              font-size: 14px;
+              display: block;
+              color: #333;
+              a {
+                padding: 0 16px;
+                line-height: 44px;
+                font-weight: normal;
+                &:hover {
+                background-color: #ea352d;
+                color: #fff;
+                text-decoration: none;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
+  // ヘッダー下(右)
+  &__rigth {
+    float: right;
+    // 未ログイン
+    &--login {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 0 10px;
+        line-height: 30px;
+        border-radius: 4px;
+        text-align: center;
+        background-color: #ea352d;
+        border: 1px solid #ea352d;
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &--signup {
+      display: inline-block;
+      margin: 0 0 0 8px;
+      a {
+        display: block;
+        border: 1px solid #0099e8;
+        background-color: #fff;
+        color: #0099e8;
+        padding: 0 10px;
+        line-height: 30px;
+        border-radius: 4px;
+        text-align: center;
+        transition: all  0.5s;
+        &:hover {
+          background-color: #0099e8;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    // ログイン
+    &__list {
+      font-size: 0;
+      a {
+        display: block;
+        font-size: 14px;
+        color: #333;
+      }
+      .list-news {
+        position: relative;
+        display: inline-block;
+        padding-left: 28px;
+        &:first-child {
+          padding: 0;
+        }
+        .news-nav {
+          position: relative;
+          height: 42px;
+          line-height: 32px;
+          i {
+            font-size: 20px;
+            color: #ccc;
+            vertical-align: middle;
+          }
+          span {
+            margin-left: 10px;
+            vertical-align: middle;
+          }
+          .nav-count {
+            position: absolute;
+            top: -2px;
+            left: 6px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ea352d;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
 
-// menu style
+
+// メニュースタイル
 .fast-menu {
   width: auto;
   left: 0;
@@ -322,158 +466,6 @@
         background: #eee;
         opacity: 1;
       }
-    }
-  }
-}
-
-  // ヘッダー下 ナビ(右)
-  &__brand {
-    position: relative;
-    display: inline-block;
-    padding: 0 0 0 22px;
-    &:hover {
-      li {
-        display: block;
-      }
-    }
-    h2 {
-      font-size: 14px;
-      font-weight: 400;
-      a {
-        font-weight: bold;
-        display: block;
-        color: #333;
-        position: relative;
-        height: 42px;
-        line-height: 32px;
-        &:hover {
-          color: #0099e8;
-          text-decoration: none;
-        }
-        .brand-icon {
-          color: #EA352D;
-          font-size: 14px;
-          margin-right: 4px;
-        }
-      }
-    }
-    // category-menu style
-    ul {
-      position: absolute;
-      left: 0;
-      top: 38px;
-      z-index: 1000;
-      background: #fff;
-      box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24);
-      li {
-        display: none;
-        width: 224px;
-        h3 {
-          font-weight: 400;
-          font-size: 14px;
-          display: block;
-          color: #333;
-          a {
-            padding: 0 16px;
-            line-height: 44px;
-            font-weight: normal;
-            &:hover {
-            background-color: #ea352d;
-            color: #fff;
-            text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// ヘッダー下(右)
-.header-nav-rigth {
-  float: right;
-  // 未ログイン
-  &__login {
-    display: inline-block;
-    a {
-      display: block;
-      padding: 0 10px;
-      line-height: 30px;
-      border-radius: 4px;
-      text-align: center;
-      background-color: #ea352d;
-      border: 1px solid #ea352d;
-      color: #fff;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-  &__signup {
-    display: inline-block;
-    margin: 0 0 0 8px;
-    a {
-      display: block;
-      border: 1px solid #0099e8;
-      background-color: #fff;
-      color: #0099e8;
-      padding: 0 10px;
-      line-height: 30px;
-      border-radius: 4px;
-      text-align: center;
-      transition: all  0.5s;
-      &:hover {
-        background-color: #0099e8;
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
-  // ログイン
-  &__list {
-    font-size: 0;
-    a {
-      display: block;
-      font-size: 14px;
-      color: #333;
-    }
-    .list-news {
-      position: relative;
-      display: inline-block;
-      padding-left: 28px;
-      &:first-child {
-        padding: 0;
-      }
-      .news-nav {
-        position: relative;
-        height: 42px;
-        line-height: 32px;
-        i {
-          font-size: 20px;
-          color: #ccc;
-          vertical-align: middle;
-        }
-        span {
-          margin-left: 10px;
-          vertical-align: middle;
-        }
-        .nav-count {
-          position: absolute;
-          top: -2px;
-          left: 6px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background: #ea352d;
-          text-align: center;
-          line-height: 20px;
-          font-size: 12px;
-          color: #fff;
-        }
-      }
-    }
-    .list-todo {
-
     }
   }
 }

@@ -1,6 +1,6 @@
-%section.item-box-detail
-  %h1.item-name 正規品！COACH【コーチ】★★大きめ ミニシグネチャー ショルダーバッグ
-  %p.item-wording
+%section.item-detail
+  %h1.item-detail__name 正規品！COACH【コーチ】★★大きめ ミニシグネチャー ショルダーバッグ
+  %p.item-detail__wording
     『正規品！COACH【コーチ】★★大きめ ミニシグネチャー ショルダーバッグ』は、876回の取引実績を持つ
     = link_to 'BOON@No.1コスパ優良店', '#'
     さんから出品されました。
@@ -9,8 +9,8 @@
     = link_to 'ショルダーバッグ/レディース', '#'
     ）の商品で、兵庫県から1~2日で発送されます。
 
-  .item-main-content.clearfix
-    .item-photo
+  .item-main.clearfix
+    .item-main-photo
       / メインスライダー
       %ul.photo-slider
         %li.photo-slider__item
@@ -33,19 +33,16 @@
         %a{ "data-slide-index": "3", width:"75", height: "75",href: ""}
           = image_tag 'coach-4.jpg'
 
-      .item-sold-out-badge
-        %div SOLD
-
+    / アイテムプライス
     .item-price-box.visible-sp
-      %span.item-price.bold ¥ 3,380
-      %span.item-tax (税込)
-      %span.item-shipping-fee 送料込み
+      %span.item-price-box__price.bold ¥ 3,380
+      %span.item-price-box__tax (税込)
+      %span.item-price-box__fee 送料込み
     .visible-sp
       .item-btn-client 購入画面に進む
       / .item-buy-btn 売り切れました
 
-
-    %table.item-detail-table
+    %table.item-table
       %tbody
         %tr
           %th 出品者
@@ -96,9 +93,9 @@
           %td 1~2日で発送
 
   .item-price-box
-    %span.item-price.bold ¥ 3,380
-    %span.item-tax (税込)
-    %span.item-shipping-fee 送料込み
+    %span.item-price-box__price.bold ¥ 3,380
+    %span.item-price-box__tax (税込)
+    %span.item-price-box__fee 送料込み
 
     .item-btn-client 購入画面に進む
     / .item-buy-btn 売り切れました
