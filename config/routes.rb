@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
   root 'items#index'
-  resources :signup, only: [:new]
+  resources :mypages, only: [:index]
+  resources :signup, only: [:new, :login] do
+    collection do
+      get 'login'
+    end
+  end
+  resources :logout, only: [:show, :destroy]
   resources :transactions, only: [:new, :edit]
+  resources :identification, only: [:edit]
+  resources :profile, onry: [:edit]
   resources :sales, only: [:new]
   resources :items, only: [:show]
-
-  get 'signup/login' => 'signup#login'
-  get 'mypage/identification' => 'mypage#edit_identification'
-  get 'mypage', to: 'mypages#index'
 end
