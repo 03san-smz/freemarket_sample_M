@@ -7,6 +7,7 @@
 @import "font-awesome";
 // font-awesomeの設定
 
+
 // item
 @import "item/header";
 @import "item/main";
@@ -14,12 +15,14 @@
 @import "item/aside";
 @import "item/footer";
 @import "item/btn";
+@import "item/item-detail";
+@import "item/item-message";
 
 // mypages
-@import "mypages/bread_scrap";
+@import "mypages/bread-scrap";
 @import "mypages/error";
 
-
+// singnup
 @import "signup/signup";
 /* ユーザー新規登録画1面 */
 @import "signup/header_top";
@@ -27,6 +30,15 @@
 @import "signup/single_footer";
 // ユーザー新規登録画面のfooter 部分テンプレート
 
+// mypage
+@import "mypage/identification";
+// 本人情報の登録編集画面
+@import "mypage/profile";
+// 本人プロフィールの編集画面
+
+// logout
+@import "logout/logout";
+// ログアウトページ画面
 
 @import "modules/initial";
 // 初期設定
@@ -42,5 +54,6 @@
 // マイページ用
 @import "signup/login";
 // ログイン画面
-@import "mypage/identification";
-// 本人情報の登録編集画面
+@import "modules/sells";
+// 商品販売用
+

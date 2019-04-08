@@ -1,0 +1,248 @@
+.item-detail {
+  background: #fff;
+  margin: 40px auto 0;
+  padding: 24px 16px 55px 16px;
+  @media(min-width: 768px) {
+    width: 700px;
+    padding: 24px 40px 40px;
+  }
+  &__name {
+    font-size: 24px;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.4;
+  }
+  &__wording {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.5;
+    a {
+      color: currentColor;
+    }
+  }
+}
+
+// メインスライダー
+.item-main {
+  margin: 16px 0 0;
+  .item-main-photo {
+    min-width: 280px;
+    max-width: 360px;
+    min-height: 280px;
+    margin: 0 auto;
+    background: #fafafa;
+    @media(min-width: 768px) {
+      float: left;
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 375px;
+    }
+  }
+  .photo-slider {
+    align-items: center;
+    display: flex;
+  }
+}
+
+// サムネイル
+.photo-thumbnail {
+  align-items: center;
+  img {
+    width: 75px;
+    height: 75px;
+  }
+  a {
+  opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+}
+
+// アイテムプライス
+.item-price-box {
+  text-align: center;
+  margin: 24px 0 0;
+  &__price {
+    margin: 0 8px 0 0;
+    font-size: 32px;
+    @media(min-width: 768px) {
+      margin: 0 16px 0 0;
+      font-size: 50px;
+    }
+  }
+  &__tax {
+    font-size: 10px;
+  }
+  &__fee {
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+// アイテムプライス SP
+.visible-sp {
+  @media(min-width: 768px) {
+    display: none;
+  }
+}
+
+// 購入ボタン
+.item-btn-client {
+  display: block;
+  height: 56px;
+  margin: 16px 0 0;
+  background: #ea352d;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  cursor: pointer;
+  @media(min-width: 768px) {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// 売り切れボタン
+.item-buy-btn {
+  background: #888;
+  display: block;
+  height: 56px;
+  margin: 16px 0 0;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+  font-weight: 600;
+  transition: all ease-out .3s;
+  cursor: not-allowed;
+  @media(min-width: 768px) {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// アイテムテーブル
+.item-table {
+  width: 100%;
+  max-width: 360px;
+  margin: 8px auto 0;
+  border-collapse: collapse;
+  border: 1px solid #f5f5f5;
+  @media(min-width: 768px) {
+    float: right;
+    max-width: 300px;
+    height: 375px;
+    margin: 0 auto;
+  }
+  th {
+    width: 39%;
+    text-align: left;
+    font-weight: 400;
+    background: #fafafa;
+    border-collapse: collapse;
+    border: 1px solid #f5f5f5;
+    @media(min-width: 768px) {
+      padding: 8px;
+    }
+  }
+  td {
+    width: 61%;
+    background: #fff;
+    border-collapse: collapse;
+    border: 1px solid #f5f5f5;
+    @media(min-width: 768px) {
+      padding: 8px;
+    }
+    a {
+      font-size: 13px;
+    }
+    .item-user-ratings {
+      display: inline-block;
+      margin: 8px 0 0 16px;
+      &:first-child {
+        margin: 0;
+      }
+      i {
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// アイテムディスクリプション
+.item-description {
+  padding: 24px 0 0;
+  line-height: 1.5;
+  font-size: 14px;
+  @media(min-width: 768px) {
+    padding: 32px 0 0;
+    font-size: 18px;
+  }
+}
+
+.item-button-container {
+  margin: 16px 0 0;
+  font-size: 0;
+  a {
+    display: inline-block;
+  }
+  i {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    margin: 1px 0 0 8px;
+    font-size: 12px;
+    vertical-align: middle;
+    @media(min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  .item-button-left {
+    @media(min-width: 768px) {
+      float: left;
+    }
+    .item-button-like{
+      color: #333;
+      border: 1px solid #f5f5f5;
+      background: #f5f5f5;
+      .icon-like-border {
+        color: #ccc;
+      }
+      .fade-in-down {
+        animation: fade-in-down ease-out .4s forwards;
+        font-size: 14px;
+      }
+    }
+    .item-button-report {
+      margin: 0 0 0 8px;
+      color: #333;
+      background: #f5f5f5;
+      @media(min-width: 768px) {
+        margin: 0 0 0 16px;
+      }
+    }
+  }
+
+  .item-button-right {
+    margin: 16px 0 0;
+    @media(min-width: 768px) {
+      margin: 8px 0 0;
+      float: right;
+    }
+  }
+}
+
+.item-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 40px;
+  transition: all ease-out .3s;
+}
