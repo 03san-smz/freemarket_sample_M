@@ -1,6 +1,6 @@
 .sp-header.visible-tablet
   .sp-header-inner.clearfix
-    %h1.logo
+    .logo
       = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?3703848211', width: '134', height: '36', alt: "メルカリ"), "#"
     .sp-header-user-nav.clearfix
       = link_to 'ログイン', "#", class: 'sp-header-btn btn-red'
@@ -20,7 +20,7 @@
 .header.visible-pc
   .header-inner
     .header-search.clearfix
-      %h1.header-search__logo
+      .header-search__logo
         = link_to image_tag('https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?3703848211', width: '134', height: '36', alt: "メルカリ"), "#"
       .header-search__keyword
         = form_for @item do |f|
@@ -62,8 +62,36 @@
                   %h3
                     = link_to 'ブランド一覧', '#'
 
-      %ul.header-nav-rigth
-        %li.header-nav-rigth__login
-          = link_to 'ログイン', "#"
-        %li.header-nav-rigth__signup
-          = link_to '新規会員登録', "#"
+      .header-nav-rigth
+        / 未ログイン
+        %ul
+          %li.header-nav-rigth__login
+            = link_to 'ログイン', "#"
+          %li.header-nav-rigth__signup
+            = link_to '新規会員登録', "#"
+        / ログイン
+        / %ul.header-nav-rigth__list
+        /   %li.list-news
+        /     = link_to '#', class: 'news-nav' do
+        /       = fa_icon 'bell-o'
+        /       %span お知らせ
+        /       .nav-count 99+
+        /     %ul
+        /       %li
+        /         = link_to '#' do
+        /           %figure
+        /           .mypage-item-body
+        /           = fa_icon ''
+        /       %li
+        /       %li
+        /       %li
+        /       %li
+        /       %li
+        /   %li.list-todo
+        /   %li
+        /     = link_to '' do
+        /       %figure
+        /         %div
+        /           = image_tag ''
+        /       %div マイページ
+        /     .mypage-box

@@ -7,6 +7,7 @@
 @import "font-awesome";
 // font-awesomeの設定
 
+
 // item
 @import "item/header";
 @import "item/main";
@@ -14,9 +15,11 @@
 @import "item/aside";
 @import "item/footer";
 @import "item/btn";
+@import "item/item-detail";
+@import "item/item-message";
 
 // mypages
-@import "mypages/bread_scrap";
+@import "mypages/bread-scrap";
 @import "mypages/error";
 
 
