@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :identification, only: [:edit]
   resources :profile, onry: [:edit]
   resources :sales, only: [:new]
+  resources :items, only: [:show]
 end

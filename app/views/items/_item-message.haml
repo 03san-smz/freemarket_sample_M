@@ -1,0 +1,226 @@
+.item-message
+  .message-container
+    .message-content
+      %ul.message-items
+        %li.clearfix
+          .message-user
+            .message-user-unknown
+              = image_tag 'user-icon.svg'
+          .message-body
+            .message-body-text 出品者がコメントを削除しました
+            .message-icons.clearfix
+              %time.message-icon-left
+                = fa_icon 'clock-o'
+                %span 160 日前
+              .message-icon-right
+                =fa_icon ''
+        %li.clearfix
+          .message-user
+            .message-user-unknown
+              = image_tag 'user-icon.svg'
+          .message-body
+            .message-body-text 出品者がコメントを削除しました
+            .message-icons.clearfix
+              %time.message-icon-left
+                = fa_icon 'clock-o'
+                %span 160 日前
+              .message-icon-right
+                =fa_icon ''
+        %li.clearfix
+          .message-user
+            .message-user-unknown
+              = image_tag 'user-icon.svg'
+          .message-body
+            .message-body-text 出品者がコメントを削除しました
+            .message-icons.clearfix
+              %time.message-icon-left
+                = fa_icon 'clock-o'
+                %span 160 日前
+              .message-icon-right
+                =fa_icon ''
+    .message-comment
+      = form_for @item do |f|
+        %p 相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
+        = f.text_area :comment, class: 'textarea-default'
+        = f.submit 'コメントする', class: 'message-submit btn-default btn-gray'
+
+/ prev-nextナビ
+%ul.nav-item-link-prev-next.clearfix
+  %li.nav-item-link-prev
+    = link_to '#' do
+      = fa_icon 'chevron-left'
+      ディズニーヴィランズ 2個セット バッジ バッチ Villains 2018
+  %li.nav-item-link-next
+    = link_to '#' do
+      楽天パンダ ノート&マスキングテープセット
+      = fa_icon 'chevron-right'
+
+/ SNSボックス
+.item-social-media-box
+  %ul.social-media-box
+    %li
+      = link_to '' do
+        = image_tag 'facebook-icon.png'
+    %li
+      = link_to '' do
+        = image_tag 'twitter-icon.png'
+    %li
+      = link_to '' do
+        = image_tag 'pinterest-icon.png'
+
+/ おすすめアイテム
+.items-user-recommended
+  %section.items-box-container.clearfix.items-box-overflow.items-user-recommended
+    %h2.items-box-head
+      = link_to 'BOON90sリバイバル@コスパ優良店さんのその他の出品', '#'
+    .items-box-content.clearfix
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'burberry.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 高級 90sバーバリー ◇ 革靴/ローファー 5 1/2 ビジネスシューズ 茶
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 7,900
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 1
+              %p.item-box-tax (税込)
+
+  / その他アイテム
+  %section.items-box-container.clearfix.items-box-overflow
+    %h2.items-box-head
+      = link_to 'コーチのショルダーバッグ その他の商品', '#'
+    .items-box-content.clearfix
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)
+      %section.items-box
+        = link_to '#' do
+          %figure.items-box-photo
+            = image_tag 'coach-hand.jpg'
+          .items-box-body
+            %h3.items-box-name.font-2 コーチ ハンドバッグ ショルダーバッグ
+            .items-box-num.clearfix
+              .items-box-price.font-5 ¥ 22,000
+              .items-box-likes.font-2
+                = fa_icon 'heart-o'
+                %span 3
+              %p.item-box-tax (税込)

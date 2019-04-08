@@ -4,4 +4,9 @@ class ItemsController < ApplicationController
     @item = "プログラミングなう"
   end
 
+  def show
+    @item = "プログラミングなう"
+    @items = "item-1"
+  end
+
 end
