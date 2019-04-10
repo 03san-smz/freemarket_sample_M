@@ -1,6 +1,6 @@
 class Prefecture < ActiveHash::Base
   include ActiveHash::Associations
-  has_many :Sales, dependent: :destroy
+  has_many :Items, dependent: :destroy
 
   self.data = [
       {id: 1,  name: '北海道'},
