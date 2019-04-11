@@ -9,8 +9,4 @@ class ItemsController < ApplicationController
     @items = "item-1"
   end
 
-  def new
-    @item = Item.new
-  end
-
 end

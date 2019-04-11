@@ -13,29 +13,9 @@
 ActiveRecord::Schema.define(version: 20190404090847) do
 
   create_table "items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.text     "product_name",        limit: 65535
-    t.integer  "price"
-    t.text     "product_description", limit: 65535
-    t.integer  "category_id"
-    t.integer  "size_id"
-    t.string   "product_state"
-    t.string   "trade_state"
-    t.string   "listing_date"
-    t.integer  "brand_id"
-    t.integer  "delivery_id"
-    t.integer  "image_id"
-    t.integer  "comment_id"
-    t.integer  "user_id"
-    t.integer  "prefecture_id"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
-    t.index ["brand_id"], name: "index_items_on_brand_id", using: :btree
-    t.index ["category_id"], name: "index_items_on_category_id", using: :btree
-    t.index ["comment_id"], name: "index_items_on_comment_id", using: :btree
-    t.index ["delivery_id"], name: "index_items_on_delivery_id", using: :btree
-    t.index ["image_id"], name: "index_items_on_image_id", using: :btree
-    t.index ["size_id"], name: "index_items_on_size_id", using: :btree
-    t.index ["user_id"], name: "index_items_on_user_id", using: :btree
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "sales", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

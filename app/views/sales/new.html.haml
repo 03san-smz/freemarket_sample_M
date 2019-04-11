@@ -8,7 +8,7 @@
         .sell-container-inner
           %h2.l-single-head.bold 商品の情報を入力
           %form.sell-form
-          = form_for @item, url:{ action: :new }, html:{ class: "sell-form" } do |f|
+          = form_for @sale, url:{ action: :new }, html:{ class: "sell-form" } do |f|
             / 出品画像
             .sell-upload-box
               %h3.sell-upload-head.bold
