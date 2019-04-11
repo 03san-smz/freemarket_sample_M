@@ -1,16 +1,7 @@
 .default-container
   = render "shared/global-header"
-
-  %nav.bread-crumbs
-    %ul
-      %li
-        = link_to "メルカリ ", "https://www.mercari.com/jp/"
-        = fa_icon "angle-right"
-      %li
-        = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
-        = fa_icon "angle-right"
-      %li
-        支払い方法
+  - breadcrumb :transactions
+  = render 'mypages/bread-scrap'
 
   %main.l-container.clearfix
     .l-content
@@ -34,4 +25,3 @@
 
 = render "shared/app-banner"
 = render "shared/global-footer"
-
