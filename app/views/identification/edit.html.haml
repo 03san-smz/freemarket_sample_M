@@ -1,15 +1,7 @@
 .default-container-mypage
   = render "shared/global-header"
-  %nav.bread-crumbs
-    %ul
-      %li
-        = link_to "メルカリ ", "https://www.mercari.com/jp/"
-        = fa_icon "angle-right"
-      %li
-        = link_to " マイページ ", "https://www.mercari.com/jp/mypage/"
-        = fa_icon "angle-right"
-      %li
-        本人情報の登録
+  - breadcrumb :identification
+  = render 'mypages/bread-scrap'
 
   .l-container-mypage
     = render "shared/global-side-menu"
