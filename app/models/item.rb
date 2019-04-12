@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   belonds_to :category
   belongs_to :brand
   belongs_to :size
-  has_many   :images
+  has_many   :images,     dependent: :destroy
   has_many   :commensts,  dependent: :destroy
   has_one    :deliveries, dependent: :destroy
 end

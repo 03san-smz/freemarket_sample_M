@@ -78,7 +78,7 @@
 - belonds_to :category
 - belongs_to :brand
 - belongs_to :size
-- has_many :images
+- has_many :images, dependent: :destroy
 - has_many :commensts, dependent: :destroy
 - has_one :deliveries, dependent: :destroy
 
@@ -91,9 +91,9 @@
 |item_id|reference|null: false, foreign_key: true|
 
 ### Association
-- has_many :items
+- has_many :items, dependent: :destroy
 - belongs_to :parent, class_name: :Category
-- has_many :children, class_name: :Category
+- has_many :children, class_name: :Category, foreign_key: parent_id, dependent: :destroy
 
 
 ## sizesテーブル
@@ -103,7 +103,7 @@
 |item_id|reference|null: false, foreign_key: true|
 
 ### Association
-- has_many :items
+- has_many :items, dependent: :destroy
 
 
 ## brandsテーブル
