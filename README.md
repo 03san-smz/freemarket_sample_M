@@ -24,6 +24,7 @@
 - has_one :sales_monies, dependent: :destroy
 - has_many :payments, dependent: :destroy
 - has_one :addresses, dependent: :destroy
+- has_one :profiles, dependent: :destroy
 
 
 ## profilesテーブル
@@ -44,7 +45,7 @@
 |------|----|-------|
 |postal_code|string|null: false|
 |building_number|integer|null: false|
-|prefectures|string|null: false|
+|prefecture_id|string|null: false|
 |city|string|null: false|
 |block|string|null: false|
 |building_number|string||
@@ -76,9 +77,23 @@
 - belongs_to :user
 - belonds_to :category
 - belongs_to :brand
-- has_many :images
+- belongs_to :size
+- has_many :images, dependent: :destroy
 - has_many :commensts, dependent: :destroy
 - has_one :deliveries, dependent: :destroy
+
+
+## categoriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|category_name|string|null: false|
+|parent_id|reference|foreign_key: parent_id|
+|item_id|reference|null: false, foreign_key: true|
+
+### Association
+- has_many :items, dependent: :destroy
+- belongs_to :parent, class_name: :Category
+- has_many :children, class_name: :Category, foreign_key: parent_id, dependent: :destroy
 
 
 ## sizesテーブル
@@ -88,7 +103,7 @@
 |item_id|reference|null: false, foreign_key: true|
 
 ### Association
-- has_many :items
+- has_many :items, dependent: :destroy
 
 
 ## brandsテーブル
@@ -115,7 +130,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |delivery_cost|integer|null: false|
-|regional_delivery|string|null: false|
+|prefecture_id|string|null: false|
 |delivery_method|string|null: false|
 |delivery_days|integer|null: false|
 |item_id|reference|null: false, foreign_key: true|
@@ -124,7 +139,7 @@
 - belongs_to :item
 
 
-## commentテーブル
+## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |comment|text|null: false|
@@ -149,7 +164,7 @@
 - belongs_to :user
 
 
-## pontsテーブル
+## pointsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |point|integer|null: false|
@@ -159,7 +174,7 @@
 - belongs_to :user
 
 
-## Sales_moneisテーブル
+## Sales_moneysテーブル
 |Column|Type|Options|
 |------|----|-------|
 |sales_money|integer|null: false|
