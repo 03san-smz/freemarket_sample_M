@@ -1,6 +1,6 @@
 class Prefecture < ActiveHash::Base
   include ActiveHash::Associations
-  has_many :Items,      dependent: :destroy
+  has_many :items,      dependent: :destroy
   has_many :deliveries, dependent: :destroy
   has_many :profiles,   dependent: :destroy
 
