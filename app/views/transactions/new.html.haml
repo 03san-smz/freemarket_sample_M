@@ -7,7 +7,7 @@
       %section.buy-content.buy-item
         .buy-content-inner
           %h3.buy-item-image
-            = image_tag "/assets/m72555349053_1.jpg", alt: ""
+            = image_tag asset_path "m72555349053_1.jpg", alt: ""
           %p.buy-item-name.bold mila schon ポロシャツ
           %form.buy-form{action: "#", method: "POST"}
             %p.buy-price-ja.bold
@@ -29,9 +29,9 @@
             %br/
             %div
               = link_to "https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8", target: "_blank" do
-                = image_tag "/assets/app-store.svg", alt: ""
+                = image_tag asset_path "app-store.svg", alt: ""
               = link_to "https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja", target: "_blank" do
-                = image_tag "/assets/google-play.svg", alt: ""
+                = image_tag asset_path "google-play.svg", alt: ""
       / 配送先情報
       %section.buy-content.buy-user-info
         .buy-content-inner
@@ -56,7 +56,7 @@
             %br/
             00 / 00
           %figure
-            = image_tag "/assets/jcb.svg", size: "26x20", alt: "jcb"
+            = image_tag asset_path "jcb.svg", size: "26x20", alt: "jcb"
           %p
           = link_to "#", class: "buy-user-info-fix" do
             %span 変更する
