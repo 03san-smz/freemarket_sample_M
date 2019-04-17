@@ -12,7 +12,7 @@
   height: 390px;
   background-size: cover;
   background-position: center;
-  background-image: url('banner-new-register.jpg');
+  background-image: image-url('banner-new-register.jpg');
     @media(max-width: 768px) {
       height: 290px;
     }
@@ -23,7 +23,7 @@
   height: 390px;
   background-size: cover;
   background-position: center;
-  background-image: url('banner-new-life.jpg');
+  background-image: image-url('banner-new-life.jpg');
     @media(max-width: 768px) {
       height: 290px;
     }
@@ -34,7 +34,7 @@
   height: 390px;
   background-size: cover;
   background-position: center;
-  background-image: url('top-banner-welcome.png');
+  background-image: image-url('top-banner-welcome.png');
     @media(max-width: 768px) {
       height: 290px;
     }
