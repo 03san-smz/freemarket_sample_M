@@ -3,6 +3,7 @@ lock "~> 3.11.0"
 
 set :application, "freemarket_sample_M"
 set :repo_url, "git@example.com:haccaman/freemarket_sample_M.git"
+set :deploy_to, '/var/www/freemarket_sample_M'
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
