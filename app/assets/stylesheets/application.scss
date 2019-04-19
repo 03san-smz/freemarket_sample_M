@@ -19,9 +19,13 @@
 @import "item/item-message";
 
 // mypages
-@import "mypages/bread-scrap";
-@import "mypages/error";
-@import "mypages/l-container";
+@import "users/bread-scrap";
+@import "users/error";
+@import "users/l-container";
+
+// cards
+@import "cards/card-new";
+@import "cards/card-index";
 
 // singnup
 @import "signup/signup";
@@ -57,4 +61,3 @@
 // ログイン画面
 @import "modules/sells";
 // 商品販売用
-

@@ -9,25 +9,37 @@ crumb :item do |item|
   parent :root
 end
 
-# mypages#index
-crumb :mypages do
-  link 'マイページ', mypages_path
+# users#index
+crumb :users do
+  link 'マイページ', users_path
+end
+
+# card#index
+crumb :cards do
+  link '支払い方法', user_cards_path
+  parent :users
+end
+
+# card#new
+crumb :new do
+  link 'クレジットカード情報入力', new_user_card_path
+  parent :cards
 end
 
 # transactions/:id/edit
 crumb :transactions do
   link '支払い方法', edit_transaction_path
-  parent :mypages
+  parent :users
 end
 
 # identification/:id/edit
 crumb :identification do
-  link '本院情報の登録', edit_identification_path
-  parent :mypages
+  link '本人情報の登録', edit_identification_path
+  parent :users
 end
 
 # profile/:id/edit
 crumb :profile do
   link 'プロフィール', edit_profile_path
-  parent :mypages
+  parent :users
 end

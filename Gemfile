@@ -65,3 +65,5 @@ gem "carrierwave"
 gem "mini_magick"
 gem "gretel"
 gem 'payjp'
+gem 'pry-rails'
+gem 'rspec-rails'

@@ -4,12 +4,13 @@
     %meta{ content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0"}
     %title FreemarketSampleM
+    %script{src: "https://js.pay.jp/", type: "text/javascript"}
 
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
-    / bxslider読み込み
+    -# bxslider読み込み
     %script{ src: "https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" }
 
   %body
