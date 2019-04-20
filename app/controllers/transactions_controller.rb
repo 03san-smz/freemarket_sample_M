@@ -2,6 +2,7 @@ class TransactionsController < ApplicationController
   def new
     @user = User.find(1)
     @card = Card.where(user_id: 1)
+    # userログイン機能など未実装のため、仮として設置
   end
 
   def edit

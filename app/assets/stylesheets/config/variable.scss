@@ -1,6 +1,15 @@
 $header: #FFFFFF;
 $body: #F5F5F5;
 $footer: #212121;
+
+// フラッシュメッセージ
+$white: #fff;
+$side_blue_dark: #253141;
+$side_blue_light: #2f3e51;
+$light_blue: #38AEF0;
+$light_gray: #999;
+$black: #434a54;
+$alert_orange: #F35500;
 // background-colorの定義
 @mixin block_central {
       top:  0;
@@ -10,4 +19,3 @@ $footer: #212121;
       margin: auto;
       }
 // ブロック要素の上下左右中央寄せ
-
