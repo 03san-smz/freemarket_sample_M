@@ -125,6 +125,12 @@ ActiveRecord::Schema.define(version: 20190417053336) do
     t.index ["user_id"], name: "index_profiles_on_user_id", using: :btree
   end
 
+  create_table "sales", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "prefecture_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "sales_moneys", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "sales_money", null: false
     t.integer  "user_id",     null: false
@@ -173,4 +179,8 @@ ActiveRecord::Schema.define(version: 20190417053336) do
   add_foreign_key "profiles", "users"
   add_foreign_key "sales_moneys", "users"
   add_foreign_key "sizes", "items"
+  add_foreign_key "users", "cards"
+  add_foreign_key "users", "payments"
+  add_foreign_key "users", "points"
+  add_foreign_key "users", "sales_moneys"
 end
