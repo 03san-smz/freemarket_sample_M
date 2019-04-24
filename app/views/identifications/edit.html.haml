@@ -4,7 +4,6 @@
   = render 'mypages/bread-scrap'
 
   .l-container-mypage
-    = render "shared/global-side-menu"
     .l-content-mypage
       %h2 本人情報の登録
       .l-single-inner-mypage
@@ -48,9 +47,6 @@
         .form-group
           = link_to "本人情報の登録について", "https://www.mercari.com/jp/help_center/article/423/" , class: "about_person_information_register"
         = fa_icon "chevron-right chevron-right-bottom"
-
-
-
-
+  = render "shared/global-side-menu"
 = render "items/aside"
 = render "shared/global-footer"

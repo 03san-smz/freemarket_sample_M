@@ -1,11 +1,4 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :authenticate_user! # 未ログイン時はログインページに遷移
-  before_action :configure_permitted_parameters, if: :devise_controller?
-
-  protected
-
-  def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:name]) #ユーザー登録時に名前も登録できる設定
-  end
+  # before_action :authenticate_user! # 未ログイン時はログインページに遷移(機能実装時コメントアウトを外す)
 end

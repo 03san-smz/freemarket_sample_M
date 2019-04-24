@@ -1,7 +1,7 @@
 .default-container
   = render "shared/global-header"
-  - breadcrumb :cards
-  = render 'users/bread-scrap'
+  - breadcrumb :cards_index
+  = render 'mypages/bread-scrap'
 
   %main.l-container.clearfix
     .l-content
@@ -13,21 +13,20 @@
               %h3.bold クレジットカード一覧
             %ul.l-single-inner__payment-list
               %li
-                - if @card.present?
-                  - @card.each do |card|
-                    .l-single-content
-                      .figure
-                        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?3276363646', width: '26', height:'20'
-                      .settings-payment-num
-                        = card.number.gsub(/[0-9]{12}/, "************")
-                      .settings-payment-num
-                        = card.valid_month
-                        /
-                        = card.vaild_year
-                      = link_to '削除する', "cards/#{card.id}", class: 'settings-payment-remove', method: :delete
+                - if @card
+                  .l-single-content
+                    .figure
+                      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?3276363646', width: '26', height:'20'
+                    .settings-payment-num
+                      = @card.number.gsub(/[0-9]{12}/, "************")
+                    .settings-payment-num
+                      = @card.exp_month
+                      /
+                      = @card.exp_year
+                    = link_to '削除する', "/cards/#{@card.id}", class: 'settings-payment-remove', method: :delete
                 - else
                   .l-single-content
-                    = link_to new_user_card_path, class: "btn-default btn-red submit_button" do
+                    = link_to "/mypages/#{@mypage.id}/cards/new", class: "btn-default btn-red submit_button" do
                       = fa_icon "credit-card"
                       クレジットカードを追加する
 
@@ -36,6 +35,5 @@
               %span 支払い方法について
               = fa_icon "angle-right"
     = render "shared/global-side-menu"
-
 = render "shared/app-banner"
 = render "shared/global-footer"

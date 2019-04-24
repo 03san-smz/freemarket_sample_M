@@ -1,24 +1,24 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # devise_for :users(ログイン機能未実装の為コメントアウト)
   root 'items#index'
-  resources :items, only: [:show]
-
-  resources :users, only: [:index] do
-    resources :cards, only: [:index, :new, :create, :destroy]
-  end
-  resources :signup, only: [:new, :login] do
-    collection do
-      get 'login'
+  resources :items, shallow: true, only: [:show] do
+    resources :transactions, only: [:new, :edit] do
+      collection do
+        post 'pay'
+      end
     end
   end
-
-  resources :logout, only: [:show, :destroy]
-  resources :identification, only: [:edit]
-  resources :profile, only: [:edit]
-  resources :sales, only: [:new]
-  resources :transactions, only: [:new, :edit] do
-    collection do
-      post 'pay'
+  resources :mypages, shallow: true, only: [:index] do
+    resources :cards, only: [:index, :new, :create, :destroy]
+    resources :identifications, only: [:edit]
+    resources :sales, only: [:new]
+    # 出品商品のステータステーブル
+    resources :status, shallow: true, only: [:index] do
+      collection do
+        post 'listing'
+        post 'in_progress'
+        post 'completed'
+      end
     end
   end
 end

@@ -1,7 +1,7 @@
 .default-container
   = render "shared/global-header"
-  - breadcrumb :new
-  = render 'users/bread-scrap'
+  - breadcrumb :cards_new
+  = render 'mypages/bread-scrap'
 
 
 %main.l-container.clearfix
@@ -9,7 +9,7 @@
   .l-content
     %section.l-chapter-container#card-wrapper
       %h2.l-chapter-head#active クレジットカード情報入力
-      = form_for [@user, @card] do |f|
+      = form_for [@mypage, @card] do |f|
         .l-single-content
           .form-group
             = f.label :number, :カード番号
@@ -36,18 +36,18 @@
             %span.form-require 必須
             %br
             .select-wrap
-              = f.select :valid_month, [["01", "01"], ["02", "02"], ["03", "03"], ["04", "04"], ["05", "05"], ["06", "06"],["07", "07"], ["08", "08"], ["09", "09"], ["10", "10"], ["11", "11"], ["12", "12"]]
+              = f.select :exp_month, [["01", "01"], ["02", "02"], ["03", "03"], ["04", "04"], ["05", "05"], ["06", "06"],["07", "07"], ["08", "08"], ["09", "09"], ["10", "10"], ["11", "11"], ["12", "12"]]
               = fa_icon 'chevron-down'
             %span 月
             %br
             .select-wrap
-              = f.select :vaild_year, [["19", "19"], ["20", "20"], ["21", "21"], ["22", "22"], ["23", "23"], ["24", "24"],["25", "25"], ["26", "26"], ["27", "27"], ["28", "28"], ["29", "29"]]
+              = f.select :exp_year, [["19", "19"], ["20", "20"], ["21", "21"], ["22", "22"], ["23", "23"], ["24", "24"],["25", "25"], ["26", "26"], ["27", "27"], ["28", "28"], ["29", "29"]]
               = fa_icon 'chevron-down'
             %span 年
           .form-group
-            = f.label :security_code, :セキュリティコード
+            = f.label :cvc_code, :セキュリティコード
             %span.form-require 必須
-            = f.text_field :security_code, placeholder: 'カード背面4桁もしくは3桁の番号', maxlength: "4", class: 'input-default'
+            = f.text_field :cvc_code, placeholder: 'カード背面4桁もしくは3桁の番号', maxlength: "4", class: 'input-default'
             .signup-seqcode
               .signup-seqcode__text
                 %span.signup-seqcode__text--question ?
@@ -60,7 +60,7 @@
     %nav.mypage-nav
       %ul.mypage-nav-list
         %li
-          = link_to users_path, class: 'mypage-nav-list-item' do
+          = link_to mypages_path, class: 'mypage-nav-list-item' do
             マイページ
             = fa_icon 'chevron-right'
         %li
@@ -136,7 +136,7 @@
             発送元・お届け先住所変更
             = fa_icon 'chevron-right'
         %li
-          = link_to '#', class: 'mypage-nav-list-item active' do
+          = link_to mypage_cards_path(@mypage), class: 'mypage-nav-list-item active' do
             支払い方法
             = fa_icon 'chevron-right'
         %li

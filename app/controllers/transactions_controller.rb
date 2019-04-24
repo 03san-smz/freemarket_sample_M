@@ -1,11 +1,15 @@
 class TransactionsController < ApplicationController
   def new
-    @user = User.find(1)
-    @card = Card.where(user_id: 1)
-    # userログイン機能など未実装のため、仮として設置
+    @item = Item.find(params[:item_id])
+    @mypage = Mypage.find(1)
+    @card = @mypage.card
+    # 要編集
   end
 
   def edit
+    @mypage = Mypage.find(1)
+    @card = @mypage.card
+    # 要編集
   end
 
   def pay
