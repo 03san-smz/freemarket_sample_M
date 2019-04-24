@@ -2,7 +2,7 @@ class CardsController < ApplicationController
 
   def index
     @mypage = Mypage.find(params[:mypage_id])
-    @card = @mypage.card
+    @card = Card.where(params[:mypage_id])
   end
 
   def new
@@ -15,9 +15,8 @@ class CardsController < ApplicationController
     if @card.save
       redirect_to mypage_cards_path, notice: 'カードを登録しました'
     else
-      @mypage = Mypage.find(1)
+      @mypage = Mypage.find(params[:mypage_id])
       @card = Card.new(card_params)
-      # userログイン機能など未実装のため、仮として設置
       flash.now[:alert] = '登録できませんでした'
       render :new
     end

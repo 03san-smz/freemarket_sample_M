@@ -14,16 +14,17 @@
             %ul.l-single-inner__payment-list
               %li
                 - if @card
-                  .l-single-content
-                    .figure
-                      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?3276363646', width: '26', height:'20'
-                    .settings-payment-num
-                      = @card.number.gsub(/[0-9]{12}/, "************")
-                    .settings-payment-num
-                      = @card.exp_month
-                      /
-                      = @card.exp_year
-                    = link_to '削除する', "/cards/#{@card.id}", class: 'settings-payment-remove', method: :delete
+                  - @card.each do |card|
+                    .l-single-content
+                      .figure
+                        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?3276363646', width: '26', height:'20'
+                      .settings-payment-num
+                        = card.number.gsub(/[0-9]{12}/, "************")
+                      .settings-payment-num
+                        = card.exp_month
+                        /
+                        = card.exp_year
+                      = link_to '削除する', "/cards/#{card.id}", class: 'settings-payment-remove', method: :delete
                 - else
                   .l-single-content
                     = link_to "/mypages/#{@mypage.id}/cards/new", class: "btn-default btn-red submit_button" do
