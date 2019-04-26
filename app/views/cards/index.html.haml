@@ -13,7 +13,7 @@
               %h3.bold クレジットカード一覧
             %ul.l-single-inner__payment-list
               %li
-                - if @card
+                - if @card.present?
                   - @card.each do |card|
                     .l-single-content
                       .figure
@@ -24,10 +24,10 @@
                         = card.exp_month
                         /
                         = card.exp_year
-                      = link_to '削除する', "/cards/#{card.id}", class: 'settings-payment-remove', method: :delete
+                      = link_to '削除する', card_path(card), class: 'settings-payment-remove', method: :delete
                 - else
                   .l-single-content
-                    = link_to "/mypages/#{@mypage.id}/cards/new", class: "btn-default btn-red submit_button" do
+                    = link_to new_mypage_card_path(@mypage), class: "btn-default btn-red submit_button" do
                       = fa_icon "credit-card"
                       クレジットカードを追加する
 

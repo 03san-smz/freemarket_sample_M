@@ -23,12 +23,12 @@
                       = @card.exp_month
                       /
                       = @card.exp_year
-                    = link_to '削除する', "/cards/#{@card.id}", class: 'settings-payment-remove', method: :delete
+                    = link_to '削除する', card(@card), class: 'settings-payment-remove', method: :delete
                 - else
                   .l-single-content
-                    = link_to "/mypages/#{@mypage.id}/cards/new", class: "btn-default btn-red submit_button" do
+                    = link_to new_mypage_card(@card), class: "btn-default btn-red submit_button" do
                       = fa_icon "credit-card"
-                      クレジットカードを追加する
+                クレジットカードを追加する
 
           .settings-not-regist
             = link_to "https://www.mercari.com/jp/help_center/category/6/", target: "_blank" do

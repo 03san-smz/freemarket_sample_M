@@ -12,13 +12,5 @@ Rails.application.routes.draw do
     resources :cards, only: [:index, :new, :create, :destroy]
     resources :identifications, only: [:edit]
     resources :sales, only: [:new]
-    # 出品商品のステータステーブル
-    resources :status, shallow: true, only: [:index] do
-      collection do
-        post 'listing'
-        post 'in_progress'
-        post 'completed'
-      end
-    end
   end
 end
