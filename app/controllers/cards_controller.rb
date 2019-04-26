@@ -2,7 +2,7 @@ class CardsController < ApplicationController
   before_action :set_mypage, only: [:index, :new, :create]
 
   def index
-    @card = Card.where(params[:card_id])
+    @cards = @mypage.cards
   end
 
   def new
