@@ -3,7 +3,7 @@ class TransactionsController < ApplicationController
 
   def new
     @mypage = @item.mypage(params[:mypage_id])
-    @card = @mypage.card(params[:crad_id])
+    @cards = @mypage.cards
   end
 
   def edit
