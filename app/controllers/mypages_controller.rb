@@ -1,7 +1,9 @@
 class MypagesController < ApplicationController
 
   def index
-    @item = "プログラミングなう"
+    @item = "商品リスト"
+    @mypage = Mypage.find(1)
+    # item定義後に追記
   end
 
 end

@@ -103,7 +103,7 @@
                     発送元の地域
                     %span.form-require 必須
                   .select-wrap
-                    = f.collection_select :prefecture_id, Prefecture.all, :id, :name, { prompt: "---" },{ class: "select-default" }
+                    -# = f.collection_select :prefecture_id, Prefecture.all, :id, :name, { prompt: "---" },{ class: "select-default" }
                     = fa_icon "angle-down"
                 / 発送までの日数
                 .form-group

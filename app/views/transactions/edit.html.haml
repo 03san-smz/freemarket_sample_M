@@ -9,19 +9,31 @@
         %h2.l-chapter-head.bold 支払い方法
         .l-single-inner
           %section
-            .l-single-content
-              %h3.l-chapter-sub-head.bold クレジットカード一覧
-            %ul.settings-payment-list
-          %section.settings-add-card
-            .l-single-content
-              = link_to "https://www.mercari.com/jp/mypage/card/create/", class: "btn-default btn-red submit_button" do
-                = fa_icon "credit-card"
+            .l-single-inner__content
+              %h3.bold クレジットカード一覧
+            %ul.l-single-inner__payment-list
+              %li
+                - if @card
+                  .l-single-content
+                    .figure
+                      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/card/jcb.svg?3276363646', width: '26', height:'20'
+                    .settings-payment-num
+                      = @card.number.gsub(/[0-9]{12}/, "************")
+                    .settings-payment-num
+                      = @card.exp_month
+                      /
+                      = @card.exp_year
+                    = link_to '削除する', card(@card), class: 'settings-payment-remove', method: :delete
+                - else
+                  .l-single-content
+                    = link_to new_mypage_card(@card), class: "btn-default btn-red submit_button" do
+                      = fa_icon "credit-card"
                 クレジットカードを追加する
+
           .settings-not-regist
             = link_to "https://www.mercari.com/jp/help_center/category/6/", target: "_blank" do
               %span 支払い方法について
               = fa_icon "angle-right"
     = render "shared/global-side-menu"
-
 = render "shared/app-banner"
 = render "shared/global-footer"

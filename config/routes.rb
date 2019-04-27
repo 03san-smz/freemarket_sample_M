@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
+  # devise_for :users(ログイン機能未実装の為コメントアウト)
   root 'items#index'
-  resources :mypages, only: [:index]
-  resources :signup, only: [:new, :login] do
-    collection do
-      get 'login'
+  resources :items, shallow: true, only: [:show] do
+    resources :transactions, only: [:new, :edit] do
+      collection do
+        post 'pay'
+      end
     end
   end
-  resources :logout, only: [:show, :destroy]
-  resources :transactions, only: [:new, :edit]
-  resources :identification, only: [:edit]
-  resources :profile, onry: [:edit]
-  resources :sales, only: [:new]
-  resources :items, only: [:show]
+  resources :mypages, shallow: true, only: [:index] do
+    resources :cards, only: [:index, :new, :create, :destroy]
+    resources :identifications, only: [:edit]
+    resources :sales, only: [:new]
+  end
 end

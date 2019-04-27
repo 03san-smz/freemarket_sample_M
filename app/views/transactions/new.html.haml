@@ -23,8 +23,9 @@
                   支払い金額
                 .buy-price-cell
                   %span¥ 1,000
-            = button_tag type: "submit", class: "btn-default btn-gray bold" do
-              購入する
+          = form_tag(pay_item_transactions_path, method: :post) do
+            %script{ type: "text/javascript", src: "https://checkout.pay.jp", class: "payjp-button", "data-text" => "購入する", "data-key" => "#{PAYJP_PUBLIC_KEY}" }
+            %br/
             %p.f14 アプリをお持ちでない方は以下よりインストールしてご利用いただけます。
             %br/
             %div
@@ -50,15 +51,21 @@
       / 支払い方法
       %section.buy-content.buy-user-info
         .buy-content-inner
-          %h3.bold 支払い方法
-          %p.buy-user-info-text
-            ************0000
-            %br/
-            00 / 00
-          %figure
-            = image_tag "jcb.svg", size: "26x20", alt: "jcb"
-          %p
-          = link_to "#", class: "buy-user-info-fix" do
-            %span 変更する
-            = fa_icon "angle-right"
-  = render "shared/single-footer"
+          - if @cards.present?
+            - @cards.each do |card|
+              %h3.bold 支払い方法
+              %p.buy-user-info-text
+                = card.number.gsub(/[0-9]{12}/, "************")
+                %br/
+                = card.exp_month + "/" + card.exp_year
+              %figure
+                = image_tag "/assets/jcb.svg", size: "26x20", alt: "jcb"
+              = link_to mypage_cards_path(@mypage), class: "buy-user-info-fix" do
+                %span 変更する
+          - else
+            %h3.bold  支払い方法
+            %p /
+            = link_to mypage_cards_path(@mypage), class: "buy-user-info-fix" do
+              %span 変更する
+              = fa_icon "angle-right"
+    = render "shared/single-footer"
