@@ -18,3 +18,5 @@
 
 public/uploads/*
 vendor/bundle/*
+config/initializers/setting.rb
+config/secrets.yml

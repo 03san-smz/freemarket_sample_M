@@ -1,0 +1,52 @@
+.default-container-mypage
+  = render "shared/global-header"
+  - breadcrumb :identification
+  = render 'mypages/bread-scrap'
+
+  .l-container-mypage
+    .l-content-mypage
+      %h2 本人情報の登録
+      .l-single-inner-mypage
+        %p &thinsp;&thinsp;&thinsp;&thinsp;&emsp;&emsp;お客さまの本人情報をご登録ください。
+        %br/
+        &thinsp;&thinsp;&thinsp;&thinsp;&emsp;&emsp;登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+        %br/
+        = link_to "本人確認書類のアップロードについて", "https://www.mercari.com/jp/help_center/article/495/", class: "a_本人確認書類のアップロードについて"
+        = fa_icon "chevron-right chevron-right-top"
+        .form-group
+          %label お名前
+          %p 森田 雄一郎
+        .form-group
+          %label お名前
+          %p モリタ ユウイチロウ
+        .form-group
+          %label 生年月日
+          %p 1981/01/31
+        .form-group
+          %label 郵便番号
+          %span 任意
+          %input{placeholder: "例）1234567"}
+        .form-group
+          %label 都道府県
+          %span 任意
+          %input{placeholder: "--"}
+          = fa_icon "chevron-up rotate-180"
+        .form-group
+          %label 市区町村
+          %span 任意
+          %input{placeholder: "例）横浜市緑区"}
+        .form-group
+          %label 番地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          %span 任意
+          %input{placeholder: "例）青山1-1-1"}
+        .form-group
+          %label 建物名&nbsp;
+          %span 任意
+          %input{placeholder: "例）柳ビル103"}
+        %button.btn-red-mypage-identificatioin 登録する
+        .form-group
+          = link_to "本人情報の登録について", "https://www.mercari.com/jp/help_center/article/423/" , class: "about_person_information_register"
+        = fa_icon "chevron-right chevron-right-bottom"
+  = render "shared/global-side-menu"
+= render "items/aside"
+= render "shared/global-footer"

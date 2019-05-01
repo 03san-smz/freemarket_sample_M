@@ -4,7 +4,8 @@
       = link_to '#' do
         %figure
           = image_tag 'user-icon.jpg', width: '60', hight: "60"
-        %h2.bold 即日配送（値引き・即買い歓迎）
+        %h2.bold
+          = @mypage.name
         %ul.mypage-number
           %div
             評価
@@ -199,7 +200,7 @@
     %nav.mypage-nav
       %ul.mypage-nav-list
         %li
-          = link_to '#', class: 'mypage-nav-list-item active' do
+          = link_to mypages_path, class: 'mypage-nav-list-item active' do
             マイページ
             = fa_icon 'chevron-right'
         %li
@@ -275,7 +276,7 @@
             発送元・お届け先住所変更
             = fa_icon 'chevron-right'
         %li
-          = link_to '#', class: 'mypage-nav-list-item' do
+          = link_to mypage_cards_path(@mypage), class: 'mypage-nav-list-item' do
             支払い方法
             = fa_icon 'chevron-right'
         %li
